@@ -1,0 +1,437 @@
+<html lang="en">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  place-items: center;
+  /* background: rgb(242,243,245); */
+  background: #f3f5fa;
+/* background: linear-gradient(90deg, rgba(251,253,254,1) 0%, rgba(226,226,226,1) 100%); */
+  font-family: "Jost", sans-serif;
+  /* background: -webkit-linear-gradient(left, #a445b2, #fa4299); */
+}
+
+.wrapper {
+  max-width: 450px;
+  height: 600px;
+  background: #4649BF;
+  color: white;
+  padding: 30px 60px;
+  border-radius: 10px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  overflow: hidden;
+}
+
+.wrapper .title-text {
+  display: flex;
+  width: 200%;
+}
+
+.wrapper .title-text .title {
+  width: 50%;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .form-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.form-container .slide-controls {
+  position: relative;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+  margin: 30px 0 10px 0;
+  justify-content: space-between;
+  border: 1px solid lightgrey;
+}
+
+.slide-controls .slide {
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  margin-right: 35px;
+  transition: all 0.6s ease;
+}
+
+.slide-controls .signup {
+  color: #000;
+  margin-left: 40px;
+}
+
+.slide-controls .slide-tab {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: 0;
+  border-radius: 5px;
+  z-index: 0;
+  background: rgb(251,253,254);
+background: linear-gradient(90deg, rgba(251,253,254,1) 0%, rgba(226,226,226,1) 100%);
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+input[type="checkb"] {
+  display: none;
+}
+
+#signup:checked ~ .slide-tab {
+  left: 50%;
+}
+
+#signup:checked ~ .signup {
+  color: #4649BF;
+}
+
+#signup:checked ~ .login {
+  color: white;
+}
+
+#login:checked ~ .signup {
+  color: white;
+}
+
+#login:checked ~ .login {
+  color: #4649BF;
+}
+
+.form-container .form-inner {
+  display: flex;
+  width: 200%;
+}
+
+.form-container .form-inner form {
+  width: 50%;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-inner form .field {
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.form-inner .logsec .field input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  /* padding-left: 15px; */
+  /* border-radius: 5px; */
+  /* border: 1px solid lightgrey; */
+  border: none;
+  border-bottom: 1px solid white;
+  /* border-bottom-width: 2px; */
+  transition: all 0.4s ease;
+  /* padding-right: 30px; */
+  background-color: #4649BF;
+  color: white;
+}
+
+
+.form-inner form #logbtn{
+  background-color: white;
+  color: #4649BF;
+  width: auto;
+  padding: 5px 55px;
+  margin-left: 80px;
+  border-bottom: none;
+  border-radius: 50px;
+}
+.form-inner form .field input::placeholder { 
+  color: white;
+  opacity: 1; 
+}
+
+.form-inner form .field input:focus {
+  border-color: #fc83bb;
+}
+
+.form-inner form .pass-link {
+  margin-top: 5px;
+}
+
+.form-inner form .pass-link a,
+.form-inner form .signup-link a {
+  color: #fa4299;
+  text-decoration: none;
+}
+
+.form-inner form .signup-link {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.form-inner form .pass-link a:hover,
+.form-inner form .signup-link a:hover {
+  text-decoration: underline;
+}
+
+form .field input[type="submit"] {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  padding-left: 0px;
+  border: none;
+  cursor: pointer;
+  background: rgb(251,253,254);
+background: linear-gradient(90deg, rgba(251,253,254,1) 0%, rgba(226,226,226,1) 100%);
+}
+
+#logo{
+    
+    width: 200px;
+    height: 80px;
+    margin-left:54px;
+    margin-bottom: 10px;
+    /* background-color: black; */
+    text-align: center;
+}
+#logo-img{
+    width: 100%;
+    height: 100%;
+}
+#login,#signup{
+    opacity: 0;
+}
+.field input{
+    color: #4649BF;
+}
+
+#redsig{
+    display: flex; 
+    align-items: center;
+    border: 1px solid red;
+    padding: 5px 10px;
+    font-size: 20px;
+    color: rgb(214, 68, 68);
+    border-radius: 3px;
+    transition: 0.2s;
+    position: absolute;
+    top: 4%;
+    opacity: 0;
+}
+#thumb{
+    /* border: 1px solid red; */
+    font-size: 20px;
+    margin-right: 10px;
+}
+#logogif{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  bottom: 0;
+  display: none;
+}
+
+</style>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & SignUp Form </title>
+</head>
+
+<body>
+  <div id="logogif"><img width="100%" height="100%" id="logoimggif" src="tech_anim_1.gif"/></div>
+    <div id="redsig">
+        <div id="thumb">
+            <span class="material-symbols-outlined">
+                thumb_down
+                </span>
+        </div>
+        <h4>Username or Password not available</h4>
+    </div>
+  <div class="wrapper">
+    <div id="logo">
+    <img id="logo-img" src="Screenshot_2023-02-25_at_10.44.16_PM-removebg-preview.png">
+    </div>
+    <div class="title-text">
+      <div class="title login">Welcome Back!</div>
+      <div class="title signup">Welcome!</div>
+    </div>
+
+    <!-- Start Form Container -->
+    <div class="form-container">
+      <div class="slide-controls">
+        <input type="radio" name="slider" id="login" checked >
+        <input type="radio" name="slider" id="signup">
+        <label for="login" class="slide login">Log In</label>
+        <label for="signup" class="slide signup"> Sign Up</label>
+        <div class="slide-tab"></div>
+      </div>
+
+      <div class="form-inner">
+
+        <!-- Start Login Form -->
+        <form action="#" class="login logsec">
+          <div class="field">
+            <input id="logname" type="text" name="logname" placeholder="name" required autocomplete="off">
+          </div>
+          <div class="field">
+            <input id="logpass" type="password" name="logpass" placeholder="password" required autocomplete="off">
+          </div>
+          <div class="pass-link">
+         
+          </div>
+          <div class="field">
+            <input type="button" id="logbtn" onclick="loginFun(this);return false" value="Log In">
+          </div>
+          <!-- <div class="signup-link">
+            Not a member? <a href="#">Sign Up now</a>
+          </div> -->
+        </form>
+
+        <!-- Start Signup Form -->
+        <form action="#" class="signup  logsec">
+          
+          <div class="field">
+
+            <input id="signname" type="text" name="signname" placeholder="name" required autocomplete="off">
+            
+          </div>
+          <div class="field">
+            <input id="signpass" type="password" name="signpass" placeholder="password" required autocomplete="off">
+
+          </div>
+          <div class="field">
+            <input id="signmail" type="email" name="signmail" placeholder="Email" required autocomplete="off">
+          </div>
+          
+
+          <div class="field">
+            <input type="button" id="logbtn" onclick="loginFun(this);return false" value="Sign Up">
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+    const loginForm = document.querySelector("form.login");
+
+const signupForm = document.querySelector("form.signup");
+
+const loginBtn = document.querySelector("label.login");
+
+const signupBtn = document.querySelector("label.signup");
+
+const signupLink = document.querySelector(".signup-link a");
+
+const loginText = document.querySelector(".title-text .login");
+
+const signupText = document.querySelector(".title-text .signup");
+
+signupBtn.onclick = () => {
+  loginForm.style.marginLeft = "-50%";
+  loginText.style.marginLeft = "-50%";
+};
+
+loginBtn.onclick = () => {
+  loginForm.style.marginLeft = "0%";
+  loginText.style.marginLeft = "0%";
+};
+
+signupLink.onclick = () => {
+  signupBtn.click();
+};
+
+
+
+let user = document.getElementById("username");
+  document.cookie = "username=";
+
+  function loginFun(ele) {
+	let user1="";
+	let pass="";
+    const xhttp = new XMLHttpRequest();
+
+     
+     
+      console.log("Hello")
+
+ 
+
+      xhttp.onreadystatechange = function () {
+                if (xhttp.readyState == 4) {
+                    if (xhttp.status == 200) {
+    	  var data = JSON.parse(xhttp.responseText);
+          console.log(data)
+          
+          if (data["loginStatus"] == "success") {
+           document.cookie = "username="+user1;
+            document.getElementById("logogif").style.display="block";
+            setTimeout(() => {
+              location.href = "Mainwork.html";
+              console.log("run");
+            }, 2000);
+          }
+          else {
+           document.getElementById("redsig").style.opacity="1";
+            setTimeout(() => {
+                document.getElementById("redsig").style.opacity="0"; 
+                location.href = "loginSample.html";
+            }, 3000);
+        	  
+          }
+        }
+    }
+      }
+
+      console.log(ele.value)
+      if(ele.value=="Sign Up"){
+    	  user1 = document.getElementById("signname").value;
+          pass = document.getElementById("signpass").value; 
+          let mail = document.getElementById("signmail").value;
+          console.log("user"+user1);
+          console.log("pass"+pass);
+          console.log("mail"+mail);
+
+          xhttp.open("POST", "Signpage?signname="+user1+"&signpass="+pass+"&type="+ele.value+"&signmail="+mail);
+      }
+      else{
+        let lognamer=document.getElementById("logname");
+    	  user1 = lognamer.value;
+          pass = document.getElementById("logpass").value;
+          console.log("user"+user1);
+          console.log("pass"+pass);
+          xhttp.open("POST", "Signpage?logname="+user1+"&logpass="+pass+"&type="+ele.value);
+      }
+
+      xhttp.send();
+      return false;
+
+      return false;
+  }
+
+</script>
+</html>

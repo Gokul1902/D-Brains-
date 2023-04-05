@@ -1,0 +1,4722 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>D_BRAINS</title>
+    <link href="Base.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Noto+Serif:ital,wght@1,400;1,700&family=Oswald:wght@700&family=Rubik+Bubbles&family=Rubik+Marker+Hatch&family=Stylish&display=swap"
+        rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Combo&family=Island+Moments&family=Lora&family=PT+Sans:ital@1&family=Roboto:ital,wght@1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.2/dist/sweetalert2.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <style>
+    @font-face {
+    font-family: puvi_semi;
+    src: url(Zoho\ Puvi\ Semibold.ttf);
+  }
+  @font-face {
+    font-family: puvi_small;
+    src: url(Zoho\ Puvi\ Black.ttf);
+  }
+        #main-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            /* padding-top: 31px; */
+
+        }
+
+        @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+
+        * {
+            /* font-family: 'Labrada', serif; */
+            box-sizing: 0;
+            padding: 0;
+            /* font-family:puvi_small; */
+            /* font-family: "Open Sans", sans-serif; */
+            font-family: "Jost", sans-serif;
+            margin: 0;
+            /* font-family: "poppins", sans-serif; */
+        }
+
+        .addcontainer {
+            width: 100%;
+            /* min-height: 100vh; */
+            /* background: #273746; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form-wrap {
+            background: #fff;
+            width: 1000px;
+            padding: 7rem 0px;
+            /* border-right: 0.5rem solid #4649BF; */
+            border-radius: 1rem;
+            margin-top: -100px;
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        }
+       .left-box input {
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #4649BF;
+            margin:20px 0px;
+        }
+        input {
+            border: none;
+            outline: none;
+            /* border-bottom: 1px solid #4649BF; */
+        }
+        
+
+        .form-wrap h1 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .signup-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: -25px;
+        }
+
+        .left-box {
+            flex-basis: 50%;
+            flex: 1;
+        }
+
+        .right-box {
+            flex-basis: 50%;
+            flex: 1;
+        }
+
+        .right-box img {
+            display: block;
+            width: 80%;
+            margin: auto;
+        }
+
+        .form-control {
+            width: 90%;
+            padding: 0.5rem;
+            margin: 10px;
+            outline: none;
+            border: 1px solid #273746;
+            font-size: 1rem;
+            /* border-radius: 04px; */
+        }
+
+        .left-box button {
+            text-decoration: none;
+            background: #4649BF;
+            color: #fff;
+            margin: 1rem 1rem;
+            font-size: 20px;
+            outline: none;
+            border: none;
+            margin: 10px 0px 0px 200px;
+            padding: 0.6rem 0.5rem;
+            display: block;
+            text-align: center;
+            width: 40%;
+            transition: all 0.5s;
+            border-radius: 30px;
+        }
+
+        .left-box a:hover {
+            background: #4649BF;
+            color: #fff;
+            transition: 0.5s;
+        }
+
+        #viewuser {
+            position: absolute;
+            bottom: 37%;
+            left: 24%;
+            font-size: 24px;
+            padding: 5px 35px;
+            border-radius: 30px;
+            border:2px solid #4649BF;
+            background-color: white;
+            color: #4649BF;
+            /* display: none; */
+        }
+
+        #Clientlist {
+            position: absolute;
+            top: 4%;
+            left: 80%;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #4649BF;
+            color: white;
+            /* display: none; */
+        }
+
+        .addcontainer {
+            color: #fff;
+            text-align: center;
+        }
+
+        .addcontainer p {
+            padding: 1rem 0px;
+        }
+
+        .addcontainer a {
+            color: #ddd;
+        }
+
+        @media (max-width: 768px) {
+            .signup-box {
+                flex-direction: column;
+            }
+        }
+
+
+        #home>img {
+            width: 800px;
+            height: 700px;
+            position: absolute;
+            top: 15%;
+            left: 10%;
+        }
+
+        #level {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #mysql-sec {
+            display: flex;
+            margin-left: 3%;
+        }
+
+        #post-sec,
+        #convert-sec {
+            display: flex;
+            margin-left: 3%;
+        }
+
+        #sqlPlay {
+            margin: 40px;
+            position: relative;
+
+        }
+
+        #sqlPlay button,
+        #sqlPlay img {
+            width: 400px;
+            height: 300px;
+        }
+
+        #sqlPlay h1 {
+            position: absolute;
+            bottom: 2%;
+            right: 5%;
+            font-size: 22px;
+            color: rgb(203, 213, 226);
+        }
+        #optionSelect{
+            position: absolute;
+            top: 4%;
+            right: 20%;
+            transition: 1s;
+            border-radius: 30px;
+            border: 2px solid #4649BF;
+            /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+        }
+        #main-btn {
+            transition: 1s;
+            border: none;
+            outline: none;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        #main-btn:hover {
+            transform: scale(1.1);
+        }
+
+        #top-nav {
+            border: 1px solid #4649BF;
+            padding: 0px 5px;
+            background-color: #4649BF;
+            /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+        }
+        #sqlbox{
+            margin-left: 40px;
+        }
+
+        #play-btn,
+        #con-btn,
+        #com-btn,
+        #home-btn,
+        #mon-btn {
+            padding: 10px;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #4649BF;
+            font-weight: bolder;
+            /* margin: 0px 10px; */
+            transition: 0s;
+            color: white;
+            border-radius: 0px 0px 5px 5px;
+
+        }
+
+        #con-btn {
+            /* border-bottom: 5px solid white; */
+        }
+
+        #top-nav button:hover {
+            background-color: white;
+            color: #4649BF;
+        }
+
+        #home-btn {
+            border-bottom: 5px solid white;
+        }
+
+        .changeDiv {
+            /* border:1px solid black; */
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #sqlSelect {
+            background-color: white;
+            position: absolute;
+            top: 4%;
+            left: 30%;
+            border-radius: 30px;
+            /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+            transition: 1s;
+            border: 2px solid #4649BF;
+        }
+
+        #sqlworkSelect {
+            text-align: center;
+        }
+
+        #viewPage {
+            width: 100%;
+            height: 100%;
+            /* display: none; */
+        }
+
+        #createPage {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sidebtn {
+            text-align: left;
+            font-size: 22px;
+            margin: 30px;
+            padding: 5px 20px;
+            border-radius: 30px;
+            background-color: #4649BF;
+            font-weight: 800;
+            cursor: pointer;
+            /* box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; */
+        }
+
+        #Homebtn {
+            background-color: white;
+            color: #4649BF;
+        }
+
+        #mysqlbtn,
+        #postbtn,
+        #createbtn,
+        #viewbtn,
+        #addbtn,
+        #confbtn,
+        #sqlconbtn,
+        #csvbtn {
+            border: none;
+            outline: none;
+            font-size: 20px;
+            /* padding: 25px 10px 10px 10px; */
+            transition: 0s;
+            font-size: 20px;
+            color: #4649BF;
+            border-radius: 30px;
+            padding: 13px 40px 7px;
+            width: 180px;
+            line-height: 30px;
+
+            
+
+        }
+
+        #csvbtn {
+            background-color: white;
+        }
+
+        #mysqlbtn,
+        #createbtn,
+        #addbtn,
+        #sqlconbtn {
+            background-color: #4649BF;
+            /* background-color: #d8d9ed; */
+            border-bottom: 5px solid #4649BF;
+            color: white;
+        }
+
+        #sqlconbtn {
+            border-bottom: 0px solid #4649BF;
+        }
+
+        #postbtn,
+        #viewbtn,
+        #confbtn {
+            background-color: white;
+        }
+
+        #main-title {
+            position: absolute;
+            top: 7%;
+            left: 42%;
+            font-size: 25px;
+            background-color: white;
+            color: #4649BF;
+            padding: 10px;
+            /* border-bottom: 1px solid rgba(0, 0, 0, 0.34); */
+            
+        }
+
+        #post-sec {
+            display: none;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            background-color: #333D79FF;
+        }
+
+        header>h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header img {
+            height: 40px;
+            width: 40px;
+            margin: 0px 10px;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-direction: column;
+            padding: 5%;
+        }
+
+        .container {
+            width: 90%;
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 2%;
+            flex-wrap: wrap;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+        }
+
+        .mysql {
+            width: 90%;
+            height: 300px;
+            border-radius: 5px;
+            background-color: rgb(242,243,245);
+            border: none;
+            outline: none;
+            padding: 10px;
+            font-size: 150%;
+            margin: 10px;
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+        }
+
+        .pgsql {
+            /* border: 1px solid rgb(64, 0, 255); */
+            width: 90%;
+            height: 300px;
+            border-radius: 5px;
+            background-color: rgb(242,243,245);
+            padding: 10px;
+            font-size: 150%;
+            margin: 10px;
+            box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+        }
+
+        .container>img {
+            rotate: 90deg;
+            margin: 10px;
+            height: 40px;
+            width: 40px;
+            transition: 1s;
+        }
+
+        textarea {
+            /* border: none; */
+            resize: none;
+        }
+
+        .buttons>button {
+            height: 50px;
+            width: 170px;
+            font-size: 120%;
+            margin: 40px 40px;
+            background-color: #4649BF;
+            color: white;
+            border-radius: 30px;
+            border: none;
+            outline: none;
+            padding: 5px 30px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+
+        #enter {
+            /* background-color: white; */
+        }
+
+        #clear {
+            background-color: white;
+            color: #4649BF;
+        }
+
+        @media screen and (min-width: 1000px) {
+            .container {
+                flex-direction: row;
+            }
+
+            .container>img {
+                transform: rotateZ(270deg);
+            }
+
+            .pgsql {
+                height: 500px;
+                width: 40%;
+            }
+
+            .mysql {
+                height: 500px;
+                width: 40%;
+            }
+        }
+
+        #parent {
+            width: 1300px;
+            height: 700px;
+            display: flex;
+            margin-top: 15%;
+        }
+
+        #write {
+            width: 50%;
+            height: 100%;
+        }
+
+        #output {
+            height: auto;
+            width: 50%;
+            margin: 20px;
+            padding: 20px 20px 40px;
+            /* background-color: #4649BF; */
+            border-radius: 10px;
+            /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+
+        }
+
+        #result {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            color: black;
+            font-size: 25px;
+            font-weight: bolder;
+            overflow: scroll;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        }
+
+        #suggestion {
+            margin: 20px;
+            height: 510px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;            padding: 0px 0px 20px 0px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            /* padding-top: 90px; */
+            overflow: scroll;
+        }
+
+        #suggestion::-webkit-scrollbar {
+            display: none;
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        #code {
+            width: 710px;
+            margin: 20px;
+            height: 70px;
+            font-size: 25px;
+            padding: 10px 30px;
+            /* border: 1px solid #4649BF; */
+            outline: none;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+            border-radius: 50px;
+        }
+
+        #addremote {
+            display: flex;
+            align-items: center;
+            width: 190px;
+            justify-content: space-evenly;
+            position: absolute;
+            top: 4%;
+            left: 14%;
+            transition: 1s;
+        }
+
+        #addlogo {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            overflow: hidden;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+        #addlogosync{
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            overflow: hidden;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+
+        #sqladdlogo {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            overflow: hidden;
+            /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+            position: absolute;
+            top: 18.5%;
+            left: 20%;
+        }
+
+        #addingLogo {
+            font-size: 50px;
+            /* background-color: #4649BF; */
+            color: #4649BF;
+            margin-right: 30px;
+            /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+        }
+
+        #databasenameshow {
+            position: absolute;
+            top: 4%;
+            right: 7%;
+            transition: 1s;
+            border: 10px solid #4649BF;
+            background-color: white;
+            padding: 0px 10px;
+            font-size: 25px;
+            border-radius: 10px;
+            display: none;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+
+        #remoteuser,
+        #sqlremoteusers {
+            /* border: 10px solid #4649BF; */
+            background-color: white;
+            border: none;
+            outline: none;
+            padding: 0px 10px;
+            font-size: 25px;
+            border-radius: 10px;
+            width: 150px;
+            height: 60px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+
+        #sqlremoteusers {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        #selectfull {
+            width: 100%;
+            text-align: center;
+        }
+
+        #parent button {
+            width: 100px;
+            height: 50px;
+            padding: 5px;
+            background-color: white;
+            color: black;
+            margin: 10px;
+            border: none;
+            border-radius: 30px;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+            font-size: 15px;
+            overflow:hidden;
+        }
+
+        #button {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            background-color: #4649BF;
+            color: white;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+
+        #button1 {
+            color: #4649BF;
+            background-color: white;
+            padding: 5px;
+            font-size: 25px;
+            font-weight: bolder;
+            margin: 20px;
+            border-radius: 10px;
+
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+       #codingarea  #tick {
+            width: 60px;
+            height: 60px;
+            line-height: 75px;
+            /* margin: 10px; */
+            position: absolute;
+            
+            border-radius: 50%;
+            background-color: #4649BF;
+            color: white;
+            left: 43.7%;
+            box-shadow: none;
+        }
+        #tick span{
+            font-weight:bolder;
+            font-size: 30px;
+        }
+        #result::-webkit-scrollbar {
+            display: none;
+        }
+
+        table,
+        tr {
+            border: 1px solid black;
+            padding: 5px;
+            font-size: 20px;
+            border: none;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 5px;
+            font-size: 20px;
+
+            background-color: #282A3A;
+            color: white;
+            /* border-bottom: 1px solid black; */
+        }
+
+        #head {
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            width: 100%;
+            position: sticky;
+            left: 0;
+            right: 0;
+            top: 0%;
+            padding-bottom: 20px;
+        }
+
+        #head>h1 {
+            width: 100px;
+            height: 50px;
+            padding: 5px 20px;
+            background-color: white;
+            color: black;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            
+        }
+
+        #datatypes,
+        #commands,
+        #functions {
+            display: none;
+        }
+
+        #suggestion h2 {
+            color: black;
+            margin: 10px 0px;
+            
+        }
+
+        #codingarea {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #syntax {
+            display: none;
+            position: absolute;
+            top: 7%;
+            /* border: 1px solid #4649bf; */
+            width: 1200px;
+            height: 130px;
+            padding: 5px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
+            /* background-color: #4649bf; */
+        }
+
+        #syngen {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            background-color: white;
+            /* box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; */
+            color: #4649BF;
+            /* border: 1px solid #4649BF; */
+            padding: 10px;
+            font-size: 22px;
+            overflow: scroll;
+        }
+
+        #syngen::-webkit-scrollbar {
+            display: none;
+        }
+
+        #playChangeDiv ul li {
+            list-style-type: none;
+            color: black;
+            background-color: white;
+            padding: 10px 20px;
+            font-size: 25px;
+            /* font-weight: bolder; */
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: rgb(0 0 0 / 15%) 0px 5px 15px 0px;        
+
+        }
+
+
+
+        .frame {
+            position: absolute;
+            top: 10%;
+            left: 13%;
+            width: 1200px;
+            height: 800px;
+            padding-right: 700px;
+            /* margin-top: -200px;
+  margin-left: -200px; */
+            margin: auto;
+            border-radius: 2px;
+            background-color: white;
+            color: #4649BF;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+            /* overflow: hidden; */
+            transition: 1s;
+            /* background: #643A7A; */
+            /* font-family: "major mono display", monospace; */
+        }
+
+        .input {
+            height: 25%;
+            transition: 0.3s;
+            z-index: 1000;
+            /* display: none; */
+        }
+
+        .button {
+            position: relative;
+            bottom: -12%;
+            left: -20%;
+        }
+
+        .input,
+        .button button {
+            position: fixed;
+            width: 100%;
+            bottom: 11%;
+            left: 51%;
+            transition: 0.3s;
+        }
+
+        .frame-title {
+            margin: 20px;
+            font-size: 25px;
+            font-weight: 900;
+            color: white;
+        }
+        #monitortop{
+            font-size: 35px;
+            position: absolute;
+            left: 42%;
+            text-decoration: underline;
+        }
+        #sername{
+            color: black;
+            margin-top: 70px;
+        }
+        .frame-input {
+            width: 80%;
+            height: 45px;
+            padding: 5px 10px;
+            position: static;
+            display: block;
+            margin: 12px;
+            border: none;
+            border-bottom: 1px solid black;
+            font-size: large;
+            margin: auto;
+            font-size: 25px;
+            /* border-radius: 10px; */
+        }
+
+        .server {
+            font-size: 1.5em;
+        }
+
+        .status {
+            margin: 30px 20px 20px;
+        }
+
+        .status-msg {
+            width: 100px;
+            height: 100px;
+            /* border:1px solid black; */
+            font-size: 1.3em;
+            line-height: 100px;
+            margin: -5px auto;
+            /* line-height: 500%; */
+            border-radius: 50%;
+           box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+
+        .button button,
+        .status {
+            /* border: 2px solid #000; */
+            /* padding: 5px 10px; */
+            border: none;
+            outline: none;
+            text-align: center;
+            color: #4649BF;
+            font-size: 2rem;
+            width: 150px;
+            height: 40px;
+            left: 35.4%;
+            cursor: pointer;
+            border-radius:30px;
+            background-color:#4649bf;
+            color:white;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 100px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+        .status{
+        background-color:white;
+            color:#4649bf;
+           
+        }
+        #monitor-img{
+            position: absolute;
+            right: 7%;
+            top: 9%;
+            width:600px;
+            height: 600px;
+            
+        }
+
+        .button button:active {
+            transform: scale(0.95);
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+        }
+
+        #statusShower {
+			display: none; 
+        }
+
+        .stop {
+            display: none; 
+        }
+
+        .start {
+            display: none;
+        }
+
+        .green {
+            background-color: white;
+            color:green;
+            border: 2px solid green;
+        }
+
+        .red {
+           background-color: white;
+            color:red;
+            border: 2px solid red;
+        }
+
+        #parent1 h1 {
+            position: absolute;
+            top: 15%;
+            color: #4649BF;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px;
+            /* margin-left:40px; */
+        }
+
+        #parent1 {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        #databaseshow,
+        #tableshow,
+        #userdatabaseshow,
+        #usertableshow {
+            width: 410px;
+            height: 600px;
+            background-color: white;
+            padding:20px;
+            margin-top: 50px;
+            margin-left: 40px;
+            padding-top: 20px;
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            overflow: scroll;
+            border-radius: 10px;
+            box-shadow: rgb(0 0 0 / 15%) 0px 5px 15px 0px;        }
+
+        #resultshow,
+        #userresultshow {
+            width: 600px;
+            height: 600px;
+            background-color: white;
+            margin-top: 50px;
+            margin-left: 40px;
+            padding: 20px 50px;
+            display: flex;
+            flex-direction: column;
+            /*border-top-left-radius:45px ;
+border-bottom-right-radius:45px;*/
+            border-radius: 10px;
+            overflow: scroll;
+            box-shadow: rgb(0 0 0 / 15%) 0px 5px 15px 0px;        }
+
+        #parent1 button {
+            background-color: white;
+            color: black;
+            padding:5px;
+            font-size: 25px;
+            font-weight: bolder;
+            border: none;
+            outline: none;
+            margin: 15px 0px;
+            border-radius: 10px;
+            width: 100%;
+            box-shadow: rgb(0 0 0 / 15%) 0px 5px 15px 0px;        }
+
+        button:active {
+            scale: 0.98;
+        }
+
+        #back-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px 5px white;
+            position: fixed;
+            right: 5%;
+            bottom: 5%;
+            padding: 5px;
+        }
+
+        #resultshow::-webkit-scrollbar {
+            display: none;
+        }
+
+        #databaseshow::-webkit-scrollbar {
+            display: none;
+        }
+
+        #tableshow::-webkit-scrollbar {
+            display: none;
+        }
+
+        #userresultshow::-webkit-scrollbar {
+            display: none;
+        }
+
+        #userdatabaseshow::-webkit-scrollbar {
+            display: none;
+        }
+
+        #usertableshow::-webkit-scrollbar {
+            display: none;
+        }
+
+
+
+        table,
+        tr {
+            border: 1px solid #4649BF;
+            padding: 5px;
+            font-size: 20px;
+        }
+
+        td {
+            border: 1px solid #4649BF;
+            padding: 5px;
+            font-size: 20px;
+            background-color: white;
+            color: black;
+        }
+
+
+
+        #masterAdd,
+        #clientAdd{
+            display: flex;
+            flex-direction: column;
+            width: 600px;
+            height: 730px;
+            /* border: 1px solid black; */
+            padding: 20px;
+            border-radius: 10px;
+            align-items: center;
+            margin: 20px 30px;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 2px 4px 8px #6b728040;
+            padding: 32px;
+        }
+        /* #masterAdd{
+        	height:430px;
+        } */
+        #syncBox{
+            display: none;
+        }
+        .syncBox {
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid black; */
+            border-radius: 10px;
+            align-items: center;
+            margin: 20px 30px;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 2px 4px 8px #6b728040;
+            padding: 82px;
+            width: 700px;
+            height: 750px;
+            position: absolute;
+            top: 8%;
+            left: 22%;
+            display: none;
+            transition: 1s;
+            color: #4649BF;
+        }
+        .aftersyncbox{
+            left:10%;
+        }
+        #syncBox input{
+            margin: 10px 20px;
+            font-size: 24px;
+            padding: 10px 10px;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #4649BF;
+        }
+        #masterAdd input {
+            margin: 30px 21px;
+            font-size: 24px;
+            width: 80%;
+            padding: 10px 10px;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #4649BF;
+        }
+
+        .aftermasteradd {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #masterAdd label {
+            margin: 5px 20px;
+            text-align: left;
+        }
+
+        #masterAdd h1 {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 50px;
+        }
+
+        #masterAdd .master {
+            font-size: 2em;
+        }
+
+        #masterAdd button {
+            width: 170px;
+            font-size: 20px;
+            text-align: center;
+            margin:50px 20px 20px;
+            background-color:#4649BF;
+            color:white;
+            border-radius:30px;
+            padding:10px 30px;
+            border: none;
+            outline: none;
+
+
+        }
+
+        #clientAdd input {
+            width: 80%;
+            margin: 30px 20px;
+            font-size: 24px;
+            padding: 10px 10px;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #4649BF;
+        }
+
+        #clientAdd label {
+            margin: 5px 20px;
+            text-align: left;
+        }
+
+
+
+        #clientAdd h1 {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 30px;
+        }
+
+        #clientAdd button {
+            width: 170px;
+            font-size: 20px;
+            text-align: center;
+            margin: 20px;
+            background-color:#4649BF;
+            color:white;
+            border-radius:30px;
+            padding:10px 30px;
+            margin-left: 240px;
+            border: none;
+            outline: none;
+
+        }
+        .comSelect #confbtn{
+            padding-right:40px;
+        }
+        #comChangeDiv .comSelect{
+            left: 37%;
+            top: 1%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #syncBox input {
+            margin: 30px 20px;
+            font-size: 24px;
+            padding: 10px 10px;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #4649BF;
+            width: 80%;
+        }
+        #main-center{
+            /* filter: blur(10px); */
+        }
+        #reverse{
+            position: absolute;
+            z-index: 999;
+            top: 30%;
+            right: 35%;
+            padding: 10px;
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            line-height: 10px;
+            border: none;
+            outline: none;
+            display: none;
+            font-size: 25px;
+            color: white;
+            background-color: #4649BF;
+        }
+        #syncBox label {
+            width: 100%;
+            margin:  20px;
+            text-align: left;
+            font-size: 24px;
+        }
+
+        #syncBox h1 {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 50px;
+        }
+
+        #syncBox button {
+            width: 170px;
+            font-size: 20px;
+            text-align: center;
+            margin-top: 70px;
+            background-color: #4649BF;
+            color: white;
+            padding: 10px ;
+            border-radius: 30px;
+            outline: none;
+            border: none;
+
+        }
+        #clientAdd #cbtn{
+            position: absolute;
+            bottom: 8.5%;
+            right: 25%;
+            background-color: white;
+            color: #4649BF;
+            border: 1px solid #4649BF;
+            outline: none;
+        }
+
+        #syncBox textarea {
+            width: 100%;
+            height: 200px;
+            font-size: 24px;
+            outline: none;
+            padding: 5px;
+        }
+
+        #sync-imgDiv {
+            width: 40px;
+            height: 40px;
+        }
+
+
+        #syncImg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .addProcess {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            /* border: 1px solid black; */
+            position: absolute;
+            left: 8%;
+            top: 10%;
+            transition: 1s;
+            /* border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 2px 4px 8px #6b728040;
+            padding: 32px; */
+        }
+        .afteraddprocess{
+            left:5%;
+        }
+
+        #userBox {
+            width: 500px;
+            height: 370px;
+            /* border: 1px solid black; */
+            position: absolute;
+            transition: 1s;
+            bottom: 35%;
+           text-align: center;
+            left: 35%;
+            font-size: 20px;
+            padding: 10px;
+            display: none;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 2px 4px 8px #6b728040;
+            padding: 32px;
+            z-index: 99;
+            overflow: scroll;
+            flex-direction: column;
+        }
+        #userBox h1{
+            font-size:1.5em;
+            color:#4649BF;
+            margin: 10px;
+            text-align: center;
+        }
+        .afteruseradd{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .userdbbtn{
+            display: inline-block;
+            width:80%;
+            /* background-color: #4649BF; */
+            background-color: white;
+            color:black;
+            border: none;
+            height:50px;
+            font-size:1.5em;
+            text-align: center;
+            margin:10px auto;
+        }
+        .userdbbtn:hover{
+            color: #4649BF;
+        }
+
+        #queryResult {
+            width: 500px;
+            height: 370px;
+            position: absolute;
+            top: 32%;
+            color: #4649BF;
+            right: 7%;
+            /* border: 1px solid black; */
+            display: none;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 2px 4px 8px #6b728040;
+            padding: 32px;
+            overflow: scroll;
+        }
+
+        #sqlFile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #sqltotal {
+            position: absolute;
+            top: 5%;
+            width: 1200px;
+            height: 900px;
+            /* border: 1px solid red; */
+            display: flex;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            border-radius: 10px;
+        }
+
+        #connectsql {
+            /* color: #4649bf; */
+
+            /* border: 1px solid green; */
+            height: 98%;
+            width: 55%;
+            margin: 30px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+            /* align-items: center; */
+
+        }
+
+        #sqlworkarea {
+            /* border: 1px solid green; */
+            height: 100%;
+            width: 55%;
+            margin: 30px;
+            padding: 30px;
+            display: flex;
+            /* color: #4649BF; */
+            flex-direction: column;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+        }
+
+        #connectsql button,
+        #sqlfilesec button,#csvfilesec button {
+            /* width: 90px; */
+            padding: 5px 10px;
+            font-size: 25px;
+            border-radius: 10px;
+            border: none;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+        }
+        #sqldatabase{
+            box-shadow: rgb(0 0 0 / 20%) 0px 12px 28px 0px, rgb(0 0 0 / 10%) 0px 2px 4px 0px, rgb(255 255 255 / 5%) 0px 0px 0px 1px inset;
+        }
+
+        #sqlfilesec,
+        #csvfilesec {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #insertBtn {
+            width: 100%;
+            text-align: center;
+            /* margin-top: 20px; */
+            padding-right: 30px;
+        }
+
+        #connectsql h1 {
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 30px;
+        }
+        #connectsql h2 {
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 30px;
+            color: dimgray;
+        }
+
+
+        #sqlworkarea h1 {
+            margin-bottom: 60px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        #resultsql img {
+            width: 100%;
+            height: 100%;
+            
+        }
+
+        #connectsql label,
+        #sqlfilesec label {
+            margin: 5px 20px;
+            font-size: 20px;
+            text-align: left;
+        }
+
+        #sqlfilesec {
+            padding-top: 50px;
+        }
+
+        /* #connectsql input,
+        #sqlfilesec input {
+            margin: 10px;
+            font-size: 20px;
+            padding: 2px 10px;
+            width: 80%;
+            border: none;
+            border-bottom: 1px solid #4649BF;
+            outline: none;
+
+            
+            border-radius: 10px;
+        } */
+
+        #sqlfilesec input {
+            margin: 30px 0px;
+        }
+
+        /* #csvfilesec input {
+            margin: 0px 0px;
+            width: 80%;
+            border: none;
+            border-radius: 10px;
+            border-bottom: 1px solid #4649BF;
+            padding: 5px;
+            outline: none;
+            font-size: 22px;
+        } */
+
+        #resultsql {
+            /* border: 1px solid black; */
+            height: 100%;
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        #sqldatabase {
+            width: 100%;
+            height: 50%;
+            /* border: 1px solid black; */
+            /* margin: 20px; */
+            padding: 20px 50px;
+            overflow: scroll;
+        }
+
+        #sqldatabase h1 {
+            text-align: center;
+            color: #4649BF;
+
+        }
+
+        #sqldatabase::-webkit-scrollbar {
+            display: none;
+
+        }
+
+        #sqldatabase button {
+            width: 100%;
+            margin: 10px 0px;
+            font-size: 22px;
+            padding: 5px;
+            border-radius: 10px;
+            background-color: white;
+            color: #4649BF;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+
+        #sqltable {
+            width: 100%;
+            height: 50%;
+            /* border: 1px solid black; */
+            margin: 20px;
+            padding: 20px 50px;
+            box-shadow: rgb(0 0 0 / 20%) 0px 12px 28px 0px, rgb(0 0 0 / 10%) 0px 2px 4px 0px, rgb(255 255 255 / 5%) 0px 0px 0px 1px inset;
+        }
+        #from,#to{
+            margin: 20px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+        }
+
+        #sqlfilesec {
+            /* border: 1px solid black; */
+            width: 500px;
+            height: 500px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        #csvfilesec {
+            /* border: 1px solid black; */
+            width: 500px;
+            height: 500px;
+            margin-top: 40px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        #csvfilesec button {
+            font-size: 22px;
+            padding: 5px;
+        }
+
+
+        #left>h1>img {
+            width: 284px;
+            height: 100px;
+            background-color: #4649BF;
+        }
+        #userBox::-webkit-scrollbar {
+    display: none;
+    }
+    #queryResult::-webkit-scrollbar {
+    display: none;
+    }
+       
+       
+
+
+#home{
+    color: black;
+}
+
+    .hero{
+            /* background: rgb(242,243,245); */
+            background-color: white;
+            color: black;
+            min-height: 99.7%;
+            width: 100%;
+            color: #fff;
+            position: relative;
+        }
+
+        nav{
+            display: flex;
+            align-items: center;
+            padding: 20px 8%;
+        }
+        #home h4,p{
+            color: black;
+            
+        }
+        #home h4{
+            font-weight: 700;
+        }
+        #home p{
+            font-size: 24px;
+            margin: 30px 0px;
+        }
+
+        nav .menu-img{
+            width: 25px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        nav .logo{
+            width: 160px;
+            cursor: pointer;
+        }
+        nav .features{
+            flex: 1;
+            text-align: right;
+            list-style-type: circle;
+        }
+        nav .features li{
+            display: inline-block;
+        }
+        nav .features li a{
+            text-decoration: none;
+            color:black;
+            font-size: 25px;
+            
+            margin:10px;
+            font-family: "Jost", sans-serif;
+            padding: 10px;
+            cursor: auto;
+        }
+        #home button{
+            background: #4649bf;
+            height: 30px;
+            width: 60px;
+            border-radius: 20px;
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+            transition: background 0.5s;
+        }
+        #home > button span{
+            display: block;
+            background: #999;
+            height: 26px;
+            width: 26px;
+            border-radius: 50%;
+            margin-left: 2px;
+            transition: background 0.5s, margin-left 0.5s;
+        }
+        .lamp-container{
+            position: absolute;
+            top: -20px;
+            left: 22%;
+            width: 200px;
+        }
+        .lamp{
+            width: 100%;
+        }
+        .light{
+            position: absolute;
+            top: 97%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 700px;
+            margin-left: -10px;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+        .text-container{
+            max-width: 700px;
+            margin-top: 12%;
+            margin-left: 50%;
+            position: absolute;
+            z-index: 8;
+        }
+        .text-container h4{
+            font-size: 65px;
+            font-weight: 400;
+        }
+        .text-container a{
+            text-decoration: none;
+            background: #00986f;
+            padding: 14px 40px;
+            display: inline-block;
+            color: #fff;
+            font-size: 18px;
+            margin-top: 30px;
+            border-radius: 30px;
+        }
+        .control{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-top: 150px;
+        }
+        .control .line{
+            width: 250px;
+            height: 4px;
+            background: #fff;
+            margin: 0 20px;
+            border-radius: 2px;
+        }
+        .control .line span{
+            width: 50%;
+            height: 8px;
+            margin-top: -2px;
+            border-radius: 4px;
+            background: #00986f;
+            display: block;
+        }
+        .active{
+            background: green;
+        }
+        .active span{
+            background: #fff;
+            margin-left: 31px;
+        }
+        .on{
+            opacity: 1;
+        }
+        .offBtn{
+            opacity: 0;
+        }
+        #Test{
+            width: 300px;
+            height: 150px;
+            /* margin-top: 50px; */
+        }
+        #text{
+            margin-top: -40px;
+            margin-bottom: 70px;
+            font-size: 30px;
+            color: #4649BF;
+        }
+
+
+
+        #home{
+            width: 100%;
+            height: 100%;
+            /* border: 1px solid red; */
+        }
+        .colors{
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        .text-container #btn{
+            width: 180px;
+            height: 50px;
+            margin:20px 20px 20px 0px;
+            padding: 2px 15px;
+            border-radius: 50px;
+            color: white;
+            font-size: 22px;
+            border: 1px solid black;
+            border: none;
+        }
+        #clip,#clip2{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #4649BF;
+            z-index: 3;
+            transition: 0.5s;
+        }
+        .profilecilp{
+            clip-path: circle(9% at 100% 0);
+        }
+        .afterprofilecilp{
+        	clip-path: circle(23% at 100% 0);
+        }
+        
+
+     
+        #syncstart{
+            position: absolute;
+            bottom:27%;
+            transition: 0.5s;
+            left: 17%;
+            opacity: 0;
+        }
+        #sync-img{
+            width: 350px;
+            height: 350px;
+            animation: shake 1s ease-in-out infinite;
+        }
+        #sync-img img{     
+            width: 100%;
+            height: 100%;
+        }
+        @keyframes shake {
+            0% { transform: translate(0, 0); }
+        25% { transform: translate(5px, 5px); }
+        50% { transform: translate(0, 10px); }
+        75% { transform: translate(-5px, 5px); }
+        100% { transform: translate(0, 0); }
+            
+        }
+        #syncstart #shake-btn{
+            width: 180px;
+            height: auto;
+            margin:0px 0px 0px 90px ;
+            padding: 5px 15px;
+            font-size: 25px;
+            background-color: white;
+            color: #4649BF;
+            border-radius: 30px;
+        }
+        #comimg{
+            width: 600px;
+            height: 600px;
+            position: absolute;
+            right: 3%;
+            bottom: 7%;
+        }
+        #comimg img{
+            width: 100%;
+            height: 100%;
+        }
+        .blurOn{
+            filter:blur(10px);
+            /* background-color: rgba(0, 0, 0, 0.7); */
+        }
+        .blurOff{
+            filter:blur(0px);
+        }
+
+        #blurbox{
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            filter: blur(10px);
+            z-index: 19;
+            background-color: rgba(255,255,255,0.9);
+            display: none;
+            transition: 1s;
+        }
+
+
+       
+      
+        #syncImgHome,#monImgHome{
+        width:200px;
+        }
+
+
+        #playChangeDiv,#conChangeDiv{
+            display: none;
+        }
+
+        #sqlFile,
+        #comChangeDiv
+         {
+            display: none;
+        }
+
+        #createPage {
+            /* display: none; */
+        }
+
+        #viewPage,
+        #userviewPage {
+            display: none;
+        }
+
+        #connectarea
+         {
+            display: none;
+        }
+        
+
+        #monChangeDiv,#sqlworkarea,#monChangeDiv,
+        #csvfilesec {
+            display: none;
+        }
+
+        #sqltotal input{
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #4649BF;
+            margin:20px 0px;
+        }
+#connectsql button,
+        #sqlfilesec button,#csvfilesec button {
+            
+            text-decoration: none;
+            background: #4649BF;
+            color: #fff;
+            margin: 1rem 1rem;
+            font-size: 20px;
+            outline: none;
+            border: none;
+            margin: 10px 0px 0px 200px;
+            padding: 0.6rem 0.5rem;
+            display: block;
+            text-align: center;
+            width: 40%;
+            transition: all 0.5s;
+            border-radius: 30px;
+            width: 180px;
+
+        }
+
+#connectsql button{
+            position: absolute;
+        bottom: 4%;
+        left: 15%;
+        }
+
+
+#Clientlist {
+            position: absolute;
+            height: 50px;
+            top: 90%;
+            left: 12%;
+            font-size: 24px;
+            padding: 5px 35px;
+            border-radius: 30px;
+            border:2px solid #4649BF;
+            background-color: white;
+            color: #4649BF;
+            /* display: none; */
+        }
+
+#csvfilesec input {
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #4649BF;
+            margin:20px 0px;
+        }
+
+#sqlfilesec input {
+            margin: 30px 0px;
+        }
+
+#sqlfilesec button,#csvfilesec button{
+            margin: auto;
+        }
+
+        #sqldatabase {
+            width: 100%;
+            height: 100%;
+            /* border: 1px solid black; */
+            
+            padding: 20px 50px;
+            overflow: scroll;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div id="clip" class="profilecilp"></div>
+   
+    <section class="outer-layer">
+        <div class="top-section">
+            <div class="top-one">
+                <section id="left" class="animate__animated animate__fadeInLeft">
+
+                    <h1 ><img src="Screenshot_2023-02-25_at_10.44.16_PM-removebg-preview.png" /></h1>
+                </section>
+                <section id="right">
+                    <h1 onclick="profileShower()" id="pro-l">G</h1>
+                    <ul class="disp" id="disp">
+           
+                        <h3 id="loginname">Lavanya</h3>
+                        <p id="loginmail">lavanyasrinivasan1811@gmail.com</p>
+                    </ul>
+                </section>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="main-sec">
+            <div class="side-bar animate__animated animate__fadeInLeft">
+                <div class="home">
+                    <div class="sidebtn" id="Homebtn" onclick="HomeChanger()">Home</div>
+                    <div class="sidebtn" id="Playbtn" onclick="playgroundchange()">D-Orchestra</div>
+                    <div class="sidebtn" id="Commbtn" onclick="communication()">DB-Sync</div>
+                    <div class="sidebtn" id="Conbtn" onclick="convertor()">Translator</div>
+                    <div class="sidebtn" id="sqlfilebtn" onclick="sqlFile()">Bulk Load</div>
+                    <div class="sidebtn" id="Monbtn" onclick="monitor()">D-Visor</div>
+                </div>
+
+                <div class="about-logout">
+                    <form action="Documentation.html"><button>
+                            <h1>About</h1>
+                        </button></form>
+
+                    <form onclick="conLogout()"><button name="type" type="button" value="logout">
+                            <h1>Log-Out</h1>
+                        </button></form>
+                </div>
+
+
+
+
+            </div>
+            <div id="main-center">
+                <div id="home">
+                   
+                    <div class="hero animate__animated animate__fadeIn">
+                        <nav>
+                           
+                            <!-- <ul class="features">
+                                <li><a href="#">File translator</a></li>
+                                <li><a href="#">Deploy workflows</a></li>
+                                <li><a href="#">Data Migration</a></li>
+                               
+                            </ul> -->
+                           
+                        </nav>
+                
+                        <div class="lamp-container">
+                            <img src="https://i.postimg.cc/yYz5Nnqw/lamp.png" alt="" class="lamp">
+                            <img src="https://i.postimg.cc/SxgtDhXh/light.png" alt="" class="light" id="light">
+                        </div>
+                        <div id="syncstart">
+                            <div id="sync-img" class="animate__animated animate__swing"><img src="dbdown-removebg-preview_-_Edited.png"/></div>
+                            <button type="button" onclick="synccom()" id="shake-btn">Go Sync</button>
+                        </div>
+                
+                        <div class="text-container">
+                            <h4>Effortless <br> Data Synchronization</h4>
+                            <p>Database synchronization establishes data consistency between databases and
+                                automatically copies changes back and forth. </p>
+                            <button type="button" onclick="toggleBtn()" id="btn" class="animate__animated animate__swing">Click Me</button>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- <div id="sqlFile">  
+                    <div id="sqltotal" >
+                        <div id="connectsql" class="animate__animated animate__fadeInUp">
+                            <div id="Clientlist" onclick="sqlclientadd()">Client List</div>
+                            <h1>Bulk Insertion</h1>
+                            <div id="from">
+                                <h1>From</h1>
+                                <label>system Username</label><br>
+                                <input type="text" id="mainuser" autocomplete="off"/><br>
+                                <label>System Password</label><br>
+                                <input type="password" id="mainpass" autocomplete="off"/><br>
+                                <label>IP Address</label><br>
+                                <input type="text" id="sqlipadd" autocomplete="off"/><br>
+                                </div>
+                            <div id="to">
+                                <h1>To</h1>
+                            <label>Mysql Username</label><br>
+                            <input type="text" id="mysqluser" autocomplete="off"/><br>
+                            <label>Mysql Password</label><br>
+                            <input type="password" id="mysqlpass" autocomplete="off"><br>
+                            <label>TO IP Address</label><br>
+                            <input type="text" id="sqltoipadd" autocomplete="off"/><br>
+                        </div>
+                        
+                            <label>Folder Name</label><br>
+                            <input type="text" id="folder"/><br>
+                            <label>File Name</label><br> 
+                            <input type="text" id="filename"/><br>
+                            <div id="insertBtn"><button type="button" onclick="addNow()">Add Now</button></div>
+                        </div>
+                        <div id="sqlworkarea">
+                            <h1>Bulk Insertion</h1>
+                            <div id="sqladdlogo" onclick="addsqlremoteClient()"><span id="addingLogo"
+                                    class="material-symbols-outlined">
+                                    add_circle
+                                </span></div>
+                            <div id="selectfull"><select onchange="showResult()" id="sqlremoteusers"></select></div>
+                            <div id="sqlworkSelect">
+                                <button onclick="sqldump()" id="sqlconbtn" type="button">SQL File</button>
+                                <button onclick="csvcon()" id="csvbtn" type="button">CSV File</button>
+                            </div>
+                            <div id="sqlfilesec">
+                                <label>Folder Name</label><br>
+                                <input type="text" id="folder" autocomplete="off"/><br>
+                                <label>File Name</label><br>
+                                <input type="text" id="filename" autocomplete="off"><br>
+                                <div><button type="button" onclick="insertion()">Insert</button></div>
+                            </div>
+                            <div id="csvfilesec">
+                                <label>Database Name</label><br>
+                                <input type="text" id="csvdatabase" autocomplete="off"/><br>
+                                <label>Table Name</label><br>
+                                <input type="text" id="csvtable" autocomplete="off"><br>
+                                <label>Folder</label><br>
+                                <input type="text" id="csvfolder" autocomplete="off"/><br>
+                                <label>File Name</label><br>
+                                <input type="text" id="csvfilename" autocomplete="off"><br>
+                                <div><button type="button" onclick="csvData()">Insert</button></div>
+                            </div>
+                        </div>
+                        <div id="resultsql" class="animate__animated animate__fadeIn">
+                            <div id="sqldatabase">
+                                <img src="Server-cuate.svg" />
+
+                            </div>
+                            <img src="undraw_transfer_files_re_a2a9.png"/>
+                            <div id="sqltable"><img
+                                    src="Server-amico.svg" />
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                
+                <div id="sqlFile">  
+                    <div id="sqltotal" >
+                        <div id="connectsql" class="animate__animated animate__fadeInUp">
+                            <div id="Clientlist" onclick="sqlclientadd()">Client List</div>
+                            <h1>Bulk Insertion</h1>
+                            <div id="from">
+                                <h2 class="text-muted">From</h2>
+                                <!-- <label>system Username</label><br> -->
+                                <input type="text" id="mainuser" autocomplete="off" class="form-control" placeholder="System Username"/><br>
+                                <!-- <label>System Password</label><br> -->
+                                <input type="password" id="mainpass" autocomplete="off" class="form-control" placeholder="System Password"/><br>
+                                <!-- <label>IP Address</label><br> -->
+                                <input type="text" id="sqlipadd" autocomplete="off" class="form-control" placeholder="IP Address"/><br>
+                                </div>
+                            <div id="to">
+                                <h2 class="text-muted">To</h2>
+                            <!-- <label>Mysql Username</label><br> -->
+                            <input type="text" id="mysqluser" autocomplete="off" class="form-control" placeholder="Mysql Username"/><br>
+                            <!-- <label>Mysql Password</label><br> -->
+                            <input type="password" id="mysqlpass" autocomplete="off" class="form-control" placeholder="Mysql Password"><br>
+                            <!-- <label>TO IP Address</label><br> -->
+                            <input type="text" id="sqltoipadd" autocomplete="off"class="form-control" placeholder="IP Address" ><br>
+                        </div>
+                        
+                            <!-- <label>Folder Name</label><br>
+                            <input type="text" id="folder"/><br>
+                            <label>File Name</label><br> 
+                            <input type="text" id="filename"/><br> -->
+                            <div id="insertBtn"><button type="button" onclick="addNow()">Add Now</button></div>
+                        </div>
+                        <div id="sqlworkarea">
+                            <h1>Bulk Insertion</h1>
+                            <div id="sqladdlogo" onclick="addsqlremoteClient()"><span id="addingLogo"
+                                    class="material-symbols-outlined">
+                                    add_circle
+                                </span></div>
+                            <div id="selectfull"><select onchange="showResult()" id="sqlremoteusers"></select></div>
+                            <div id="sqlworkSelect">
+                                <button onclick="sqldump()" id="sqlconbtn" type="button">SQL File</button>
+                                <button onclick="csvcon()" id="csvbtn" type="button">CSV File</button>
+                            </div>
+                            <div id="sqlfilesec">
+                                <!-- <label>Folder Name</label><br> -->
+                                <input type="text" id="folder" autocomplete="off" class="form-control" placeholder="Folder Name"/><br>
+                                <!-- <label>File Name</label><br> -->
+                                <input type="text" id="filename" autocomplete="off" class="form-control" placeholder="File Name"><br>
+                                <div><button type="button" onclick="insertion()">Insert</button></div>
+                            </div>
+                            <div id="csvfilesec">
+                                <!-- <label>Database Name</label><br> -->
+                                <input type="text" id="csvdatabase" autocomplete="off" class="form-control" placeholder="Database Name"/><br>
+                                <!-- <label>Table Name</label><br> -->
+                                <input type="text" id="csvtable" autocomplete="off" class="form-control" placeholder="Table Name"><br>
+                                <!-- <label>Folder</label><br> -->
+                                <input type="text" id="csvfolder" autocomplete="off" class="form-control" placeholder="Folder Name"/><br>
+                                <!-- <label>File Name</label><br> -->
+                                <input type="text" id="csvfilename" autocomplete="off" class="form-control" placeholder="File Name"><br>
+                                <div><button type="button" onclick="csvData()">Insert</button></div>
+                            </div>
+                        </div>
+                        <div id="resultsql" class="animate__animated animate__fadeIn">
+                            <div id="sqldatabase">
+                                <!-- <img src="Server-cuate.svg" /> -->
+
+                            </div>
+                            <!-- <img src="undraw_transfer_files_re_a2a9.png"/> -->
+                            <!-- <div id="sqltable"><img
+                                    src="Server-amico.svg" />
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div id="playChangeDiv">
+                    <div id="playarea">
+                        <div id="addremote">
+                            <div id="addlogo" onclick="addremoteClient()"><span id="addingLogo"
+                                    class="material-symbols-outlined">
+                                    add_circle
+                                </span></div>
+                            <select id="remoteuser" onchange="frameChanger()">
+                                    
+                            </select>
+                        </div>
+                        <div id="sqlSelect">
+                            <button onclick="mysqlProcess()" id="mysqlbtn" type="button">Mysql</button>
+                            <button onclick="psqlProcess()" id="postbtn" type="button">Postgresql</button>
+                        </div>
+                        <div id="optionSelect">
+                            <button onclick="createProcess()" id="createbtn" type="button">Q-Creator</button>
+                            <button onclick="viewProcess()" id="viewbtn" type="button">DataVisage</button>
+                        </div>
+                        <div id="createPage">
+                            <select name="databasename" id="databasenameshow">
+                            </select>
+                            <div id="parent">
+                                <div id="write">
+                                    <section id="codingarea">
+                                        <input id="code" name="query" oninput="syntaxGenerator()" type="text"
+                                            placeholder="Enter Query!!!" autocomplete="off" />
+                                        <button id="tick" onclick="ansShow()"><span
+                                                class="material-symbols-outlined">Done</span></button>
+                                    </section>
+                                    <div id="suggestion">
+                                        <div id="head">
+                                            <h1 onclick="displayChange(this)">COMMANDS</h1>
+                                            <h1 onclick="displayChange(this)">DATATYPES</h1>
+                                            <h1 onclick="displayChange(this)">FUNCTIONS</h1>
+                                            <button onclick="clearing()" value="CLEAR">CLEAR</button>
+                                        </div>
+                                        <div id="commands">
+                                            <h2>DML</h2>
+                                            <button onclick="add(this)" value="INSERT">INSERT</button>
+                                            <button onclick="add(this)" value="UPDATE">UPDATE</button>
+                                            <button onclick="add(this)" value="DELETE">DELETE</button>
+                                            <button onclick="add(this)" value="SELECT">SELECT</button>
+                                            <h2>DDL</h2>
+                                            <button onclick="add(this)" value="CREATE">CREATE</button>
+                                            <button onclick="add(this)" value="DROP">DROP</button>
+                                            <button onclick="add(this)" value="ALTER">ALTER</button>
+                                            <h2>TCL</h2>
+                                            <button onclick="add(this)" value="TRUNCATE">TRUNCATE</button>
+                                            <button onclick="add(this)" value="COMMENT">COMMENT</button>
+                                            <button onclick="add(this)" value="COMMIT">COMMIT</button>
+                                            <button onclick="add(this)" value="ROLLBACK">ROLLBACK</button>
+                                            <button onclick="add(this)" value="SAVEPOINT">SAVEPOINT</button>
+                                            <h2>DCL</h2>
+                                            <button onclick="add(this)" value="GRANT">GRANT</button>
+                                            <button onclick="add(this)" value="REVOKE">REVOKE</button>
+
+                                        </div>
+                                        <div id="datatypes">
+                                            <h2>String Data Types</h2>
+                                            <button onclick="add(this)" value="CCHAR(size)">CHAR(size)</button>
+                                            <button onclick="add(this)" value="VARCHAR(size)">VARCHAR(size)</button>
+                                            <button onclick="add(this)" value="BINARY(size)">BINARY(size)</button>
+                                            <button onclick="add(this)" value="VARBINARY(size)">VARBINARY(size)</button>
+                                            <button onclick="add(this)" value="TINYBLOB">TINYBLOB</button>
+                                            <button onclick="add(this)" value="TINYTEXT">TINYTEXT</button>
+                                            <button onclick="add(this)" value="TEXT(size)">TEXT(size)</button>
+                                            <button onclick="add(this)" value="BLOB(size)">BLOB(size)</button>
+                                            <button onclick="add(this)" value="MEDIUMTEXT">MEDIUMTEXT</button>
+                                            <button onclick="add(this)" value="MEDIUMBLOB">MEDIUMBLOB</button>
+                                            <button onclick="add(this)" value="LONGTEXT">LONGTEXT</button>
+                                            <button onclick="add(this)" value="LONGBLOB">LONGBLOB</button>
+                                            <button onclick="add(this)" value="ENUM(val1, val2, val3, ...)">ENUM(val1,
+                                                val2, val3, ...)</button>
+                                            <button onclick="add(this)" value="SET(val1, val2, val3, ...)">SET(val1,
+                                                val2, val3, ...)</button>
+                                            <h2>Numeric Data Types</h2>
+                                            <button onclick="add(this)" value="BIT(size)">BIT(size)</button>
+                                            <button onclick="add(this)" value="TINYINT(size)">TINYINT(size)</button>
+                                            <button onclick="add(this)" value="BOOL">BOOL</button>
+                                            <button onclick="add(this)" value="BOOLEAN">BOOLEAN</button>
+                                            <button onclick="add(this)" value="SMALLINT(size)">SMALLINT(size)</button>
+                                            <button onclick="add(this)" value="MEDIUMINT(size)">MEDIUMINT(size)</button>
+                                            <button onclick="add(this)" value="INT(size)">INT(size)</button>
+                                            <button onclick="add(this)" value="INTEGER(size)">INTEGER(size)</button>
+                                            <button onclick="add(this)" value="BIGINT(size)">BIGINT(size)</button>
+                                            <button onclick="add(this)" value="FLOAT(size, d)">FLOAT(size, d)</button>
+                                            <button onclick="add(this)" value="FLOAT(p)">FLOAT(p)</button>
+                                            <button onclick="add(this)" value="DOUBLE(size, d)">DOUBLE(size, d)</button>
+                                            <button onclick="add(this)" value="DECIMAL(size, d)">DECIMAL(size,
+                                                d)</button>
+                                            <button onclick="add(this)" value="DEC(size, d)">DEC(size, d)</button>
+                                            <h2>Date and Time Data Types</h2>
+                                            <button onclick="add(this)" value="DATE">DATE</button>
+                                            <button onclick="add(this)" value="DATETIME(fsp)">DATETIME(fsp)</button>
+                                            <button onclick="add(this)" value="TIMESTAMP(fsp)">TIMESTAMP(fsp)</button>
+                                            <button onclick="add(this)" value="TIME(fsp)">TIME(fsp)</button>
+                                            <button onclick="add(this)" value="YEAR">YEAR</button>
+                                        </div>
+                                        <div id="functions">
+                                            <h2>String Functions</h2>
+                                            <button onclick="add(this)" value="ASCII( single_character )">ASCII(
+                                                single_character )</button>
+                                            <button onclick="add(this)" value="CHAR_LENGTH( string )">CHAR_LENGTH(
+                                                string )</button>
+                                            <button onclick="add(this)"
+                                                value="CHARACTER_LENGTH( string )">CHARACTER_LENGTH( string )</button>
+                                            <button onclick="add(this)"
+                                                value="CONCAT( expression1, expression2, ... expression_n )">CONCAT(
+                                                expression1, expression2, ... expression_n )</button>
+                                            <button onclick="add(this)"
+                                                value="CONCAT_WS( separator, expression1, expression2, ... expression_n )">CONCAT_WS(
+                                                separator, expression1, expression2, ... expression_n )</button>
+                                            <button onclick="add(this)"
+                                                value="FIELD( value, val1, val2, val3, ... )">FIELD( value, val1, val2,
+                                                val3, ... )</button>
+                                            <button onclick="add(this)"
+                                                value="FIND_IN_SET( string, string_list )">FIND_IN_SET( string,
+                                                string_list )</button>
+                                            <button onclick="add(this)" value="FORMAT( number, decimal_places )">FORMAT(
+                                                number, decimal_places )</button>
+                                            <button onclick="add(this)"
+                                                value="INSERT( string, position, number, substring )">INSERT( string,
+                                                position, number, substring )</button>
+                                            <button onclick="add(this)" value="INSTR( string, substring )">INSTR(
+                                                string, substring )</button>
+                                            <button onclick="add(this)" value="LCASE( string )">LCASE( string )</button>
+                                            <button onclick="add(this)"
+                                                value="LEFT( string, number_of_characters )">LEFT( string,
+                                                number_of_characters )</button>
+                                            <button onclick="add(this)" value="LENGTH( string )">LENGTH( string
+                                                )</button>
+                                            <button onclick="add(this)"
+                                                value="LOCATE( substring, string, [start_position ] )">LOCATE(
+                                                substring, string, [start_position ] )</button>
+                                            <button onclick="add(this)" value="LOWER( string )">LOWER( string )</button>
+                                            <button onclick="add(this)" value="LPAD( string, length, pad_string )">LPAD(
+                                                string, length, pad_string )</button>
+                                            <button onclick="add(this)" value="LTRIM( string )">LTRIM( string )</button>
+                                            <button onclick="add(this)"
+                                                value="MID( string, start_position, length )">MID( string,
+                                                start_position, length )</button>
+                                            <button onclick="add(this)"
+                                                value="POSITION( substring IN string )">POSITION( substring IN string
+                                                )</button>
+                                            <button onclick="add(this)" value="REPEAT( string, number )">REPEAT( string,
+                                                number )</button>
+                                            <button onclick="add(this)"
+                                                value="REPLACE( string, from_substring, to_substring )">REPLACE( string,
+                                                from_substring, to_substring )</button>
+                                            <button onclick="add(this)" value="REVERSE( string )">REVERSE( string
+                                                )</button>
+                                            <button onclick="add(this)"
+                                                value="RIGHT( string, number_of_characters )">RIGHT( string,
+                                                number_of_characters )</button>
+                                            <button onclick="add(this)" value="RPAD( string, length, pad_string )">RPAD(
+                                                string, length, pad_string )</button>
+                                            <button onclick="add(this)" value="RTRIM( string )">RTRIM( string )</button>
+                                            <button onclick="add(this)" value="SPACE( number )">SPACE( number )</button>
+                                            <button onclick="add(this)" value="STRCMP( string1, string2 )">STRCMP(
+                                                string1, string2 )</button>
+                                            <button onclick="add(this)"
+                                                value="SUBSTR( string, start_position, [ length ] )">SUBSTR( string,
+                                                start_position, [ length ] )</button>
+                                            <button onclick="add(this)"
+                                                value="SUBSTRING_INDEX( string, delimiter, number )">SUBSTRING_INDEX(
+                                                string, delimiter, number )</button>
+                                            <button onclick="add(this)"
+                                                value="TRIM( [ LEADING | TRAILING | BOTH ] [ trim_character FROM ] string )">TRIM(
+                                                [ LEADING | TRAILING | BOTH ] [ trim_character FROM ] string )</button>
+                                            <button onclick="add(this)" value="UCASE( string )">UCASE( string )</button>
+                                            <button onclick="add(this)" value="UPPER( string )">UPPER( string )</button>
+
+                                            <h2>Numeric/Math Functions</h2>
+
+                                            <button onclick="add(this)" value="ABS( number )">ABS( number )</button>
+                                            <button onclick="add(this)" value="ACOS( number )">ACOS( number )</button>
+                                            <button onclick="add(this)" value="ASIN( number )">ASIN( number )</button>
+                                            <button onclick="add(this)" value="ATAN( number )">ATAN( number )</button>
+                                            <button onclick="add(this)" value="ATAN2( n, m )">ATAN2( n, m )</button>
+                                            <button onclick="add(this)" value="CEIL( number )">CEIL( number )</button>
+                                            <button onclick="add(this)" value="COS( number )">COS( number )</button>
+                                            <button onclick="add(this)" value="COT( number )">COT( number )</button>
+                                            <button onclick="add(this)" value="COT( number )">COT( number )</button>
+                                            <button onclick="add(this)" value="DEGREES( number )">DEGREES( number
+                                                )</button>
+                                            <button onclick="add(this)" value="n DIV m">n DIV m</button>
+                                            <button onclick="add(this)" value="EXP( number )">EXP( number )</button>
+                                            <button onclick="add(this)" value="FLOOR( number )">FLOOR( number )</button>
+                                            <button onclick="add(this)"
+                                                value="GREATEST( expr1, expr2, ... expr_n )">GREATEST( expr1, expr2, ...
+                                                expr_n )</button>
+                                            <button onclick="add(this)" value="LEAST( expr1, expr2, ... expr_n )">LEAST(
+                                                expr1, expr2, ... expr_n )</button>
+                                            <button onclick="add(this)" value="LN( number )">LN( number )</button>
+                                            <button onclick="add(this)" value="LOG( number )">LOG( number )</button>
+                                            <button onclick="add(this)"
+                                                value="MAX(aggregate_expression)">MAX(aggregate_expression)</button>
+                                            <button onclick="add(this)"
+                                                value="MIN(aggregate_expression)">MIN(aggregate_expression)</button>
+                                            <button onclick="add(this)" value="MOD( n, m )192.168.43.129">MOD( n, m
+                                                )</button>
+                                            <button onclick="add(this)" value="PI( )">PI( )</button>
+                                            <button onclick="add(this)" value="POW( m, n )">POW( m, n )</button>
+                                            <button onclick="add(this)" value="POWER( m, n )">POWER( m, n )</button>
+                                            <button onclick="add(this)" value="RADIANS( number )">RADIANS( number
+                                                )</button>
+                                            <button onclick="add(this)" value="RAND( [seed] )">RAND( [seed] )</button>
+                                            <button onclick="add(this)"
+                                                value="ROUND( number, [ decimal_places ] )">ROUND( number, [
+                                                decimal_places ] )</button>
+                                            <button onclick="add(this)" value="SIGN( number )">SIGN( number )</button>
+                                            <button onclick="add(this)" value="SIN( number )">SIN( number )</button>
+                                            <button onclick="add(this)" value="SQRT( number )">SQRT( number )</button>
+                                            <button onclick="add(this)"
+                                                value="SUM(aggregate_expression)">SUM(aggregate_expression)</button>
+                                            <button onclick="add(this)" value="TAN( number )">TAN( number )</button>
+                                            <button onclick="add(this)"
+                                                value="TRUNCATE( number, decimal_places )">TRUNCATE( number,
+                                                decimal_places )</button>
+
+                                            <h2>Date/Time Functions</h2>
+
+                                            <button onclick="add(this)" value="ADDDATE( date, days )">ADDDATE( date,
+                                                days )</button>
+                                            <button onclick="add(this)" value="ADDTIME( start_value, time )">ADDTIME(
+                                                start_value, time )</button>
+                                            <button onclick="add(this)" value="CURDATE( )">CURDATE( )</button>
+                                            <button onclick="add(this)" value="CURRENT_DATE( )">CURRENT_DATE( )</button>
+                                            <button onclick="add(this)" value="CURRENT_TIME( )">CURRENT_TIME( )</button>
+                                            <button onclick="add(this)" value="CURRENT_TIMESTAMP( )">CURRENT_TIMESTAMP(
+                                                )</button>
+                                            <button onclick="add(this)" value="CURTIME( )">CURTIME( )</button>
+                                            <button onclick="add(this)" value="DATE( expression )">DATE( expression
+                                                )</button>
+                                            <button onclick="add(this)"
+                                                value="DATE_ADD( date, INTERVAL value unit )">DATE_ADD( date, INTERVAL
+                                                value unit )</button>
+                                            <button onclick="add(this)"
+                                                value="DATE_ADD( date, INTERVAL value unit )">DATE_ADD( date, INTERVAL
+                                                value unit )</button>
+                                            <button onclick="add(this)"
+                                                value="DATE_FORMAT( date, format_mask )">DATE_FORMAT( date, format_mask
+                                                )</button>
+                                            <button onclick="add(this)"
+                                                value="DATE_SUB( date, INTERVAL value unit )">DATE_SUB( date, INTERVAL
+                                                value unit )</button>
+                                            <button onclick="add(this)" value="DATEDIFF( date1, date2 )">DATEDIFF(
+                                                date1, date2 )</button>
+                                            <button onclick="add(this)" value="DAY( date_value )">DAY( date_value
+                                                )</button>
+                                            <button onclick="add(this)" value="DAYNAME( date_value )">DAYNAME(
+                                                date_value )</button>
+                                            <button onclick="add(this)" value="DAYOFMONTH( date_value )">DAYOFMONTH(
+                                                date_value ) </button>
+                                            <button onclick="add(this)" value="DAYOFWEEK( date_value )">DAYOFWEEK(
+                                                date_value )</button>
+                                            <button onclick="add(this)" value="DAYOFYEAR( date_value )">DAYOFYEAR(
+                                                date_value )</button>
+                                            <button onclick="add(this)" value="EXTRACT( unit FROM date )">EXTRACT( unit
+                                                FROM date )</button>
+                                            <button onclick="add(this)" value="FROM_DAYS( numeric_day )">FROM_DAYS(
+                                                numeric_day )</button>
+                                            <button onclick="add(this)" value="HOUR( date_value )">HOUR( date_value
+                                                )</button>
+                                            <button onclick="add(this)" value="LAST_DAY( date_value )">LAST_DAY(
+                                                date_value )</button>
+                                            <button onclick="add(this)" value="LOCALTIME( )">LOCALTIME( )</button>
+                                            <button onclick="add(this)" value="LOCALTIMESTAMP( )">LOCALTIMESTAMP(
+                                                )</button>
+                                            <button onclick="add(this)" value="MAKEDATE( year, day-of-year )">MAKEDATE(
+                                                year, day-of-year )</button>
+                                            <button onclick="add(this)"
+                                                value="MAKETIME( hour, minute, second )">MAKETIME( hour, minute, second
+                                                )</button>
+                                            <button onclick="add(this)" value="MICROSECOND( date_value )">MICROSECOND(
+                                                date_value )</button>
+                                            <button onclick="add(this)" value="MINUTE( date_value )">MINUTE( date_value
+                                                )</button>
+                                            <button onclick="add(this)" value="MONTH( date_value )">MONTH( date_value
+                                                )</button>
+                                            <button onclick="add(this)" value="MONTHNAME( date_value )">MONTHNAME(
+                                                date_value )</button>
+                                            <button onclick="add(this)" value="NOW( )">NOW( )</button>
+                                            <button onclick="add(this)"
+                                                value="PERIOD_ADD( period, number )PERIOD_ADD( period, number )">PERIOD_ADD(
+                                                period, number )</button>
+                                            <button onclick="add(this)"
+                                                value="PERIOD_DIFF( period1, period2 )">PERIOD_DIFF( period1, period2
+                                                )</button>
+                                            <button onclick="add(this)" value="QUARTER( date_value )">QUARTER(
+                                                date_value )</button>
+                                            <button onclick="add(this)" value="SEC_TO_TIME( seconds )">SEC_TO_TIME(
+                                                seconds )</button>
+                                            <button onclick="add(this)" value="SECOND( date_value )">SECOND( date_value
+                                                )</button>
+                                            <button onclick="add(this)"
+                                                value="STR_TO_DATE( string, format_mask )">STR_TO_DATE( string,
+                                                format_mask )</button>
+                                            <button onclick="add(this)"
+                                                value="SUBDATE( date, INTERVAL value unit )">SUBDATE( date, INTERVAL
+                                                value unit )</button>
+                                            <button onclick="add(this)" value="SUBTIME( start_value, time )">SUBTIME(
+                                                start_value, time )</button>
+                                            <button onclick="add(this)" value="SYSDATE( )">SYSDATE( )</button>
+                                            <button onclick="add(this)" value="TIME( expression )">TIME( expression
+                                                )</button>
+                                            <button onclick="add(this)"
+                                                value="TIME_FORMAT( time, format_mask )">TIME_FORMAT( time, format_mask
+                                                )</button>
+                                            <button onclick="add(this)" value="TIME_TO_SEC( time )">TIME_TO_SEC( time
+                                                )</button>
+                                            <button onclick="add(this)" value="TIMEDIFF( time1, time2 )">TIMEDIFF(
+                                                time1, time2 )</button>
+                                            <button onclick="add(this)"
+                                                value="TIMESTAMP( expression, [ interval ] )">TIMESTAMP( expression, [
+                                                interval ] )</button>
+                                            <button onclick="add(this)" value="TO_DAYS( date )">TO_DAYS( date )</button>
+                                            <button onclick="add(this)" value="WEEK( date_value, [ mode ] )">WEEK(
+                                                date_value, [ mode ] )</button>
+                                            <button onclick="add(this)" value="WEEKDAY( date_value )">WEEKDAY(
+                                                date_value )</button>
+                                            <button onclick="add(this)" value="WEEKOFYEAR( date_value )">WEEKOFYEAR(
+                                                date_value )</button>
+                                            <button onclick="add(this)" value="YEAR( date_value )">YEAR( date_value
+                                                )</button>
+                                            <button onclick="add(this)"
+                                                value="YEARWEEK( date_value, [ mode ] )">YEARWEEK( date_value, [ mode ]
+                                                )</button>
+
+                                            <h2>Advanced Functions</h2>
+
+                                            <button onclick="add(this)" value="BIN( number )">BIN( number )</button>
+                                            <button onclick="add(this)" value="BINARY value">BINARY value</button>
+                                            <button onclick="add(this)" value="CAST( value AS type )">CAST( value AS
+                                                type )</button>
+                                            <button onclick="add(this)"
+                                                value="COALESCE( expression1, expression2, ... expression_n )">COALESCE(
+                                                expression1, expression2, ... expression_n )</button>
+                                            <button onclick="add(this)" value="CONNECTION_ID( )">CONNECTION_ID(
+                                                )</button>
+                                            <button onclick="add(this)" value="CONV( number, from_base, to_base )">CONV(
+                                                number, from_base, to_base )</button>
+                                            <button onclick="add(this)" value="CONVERT( value, type )">CONVERT( value,
+                                                type )</button>
+                                            <button onclick="add(this)" value="CURRENT_USER( )">CURRENT_USER( )</button>
+                                            <button onclick="add(this)" value="DATABASE( )">DATABASE( )</button>
+                                            <button onclick="add(this)"
+                                                value="IF( condition, [value_if_true], [value_if_false] )">IF(
+                                                condition, [value_if_true], [value_if_false] )</button>
+                                            <button onclick="add(this)"
+                                                value="IFNULL( expression, value_if_null )">IFNULL( expression,
+                                                value_if_null )</button>
+                                            <button onclick="add(this)" value="ISNULL( expression )">ISNULL( expression
+                                                )</button>
+                                            <button onclick="add(this)"
+                                                value="LAST_INSERT_ID( [expression] )">LAST_INSERT_ID( [expression]
+                                                )</button>
+                                            <button onclick="add(this)"
+                                                value="NULLIF( expression1, expression2 )">NULLIF( expression1,
+                                                expression2 )</button>
+                                            <button onclick="add(this)" value="SESSION_USER( )">SESSION_USER( )</button>
+                                            <button onclick="add(this)" value="SYSTEM_USER( )">SYSTEM_USER( )</button>
+                                            <button onclick="add(this)" value="USER( )">USER( )</button>
+                                            <button onclick="add(this)" value="VERSION( )">VERSION( )</button>
+
+                                            <h2>Encryption Functions</h2>
+
+                                            <button onclick="add(this)" value="ENCRYPT( string [, salt ] )">ENCRYPT(
+                                                string [, salt ] )</button>
+                                            <button onclick="add(this)" value="MD5( string )">MD5( string )</button>
+                                            <button onclick="add(this)" value="OLD_PASSWORD( string )">OLD_PASSWORD(
+                                                string )</button>
+                                            <button onclick="add(this)" value="PASSWORD( string )">PASSWORD( string
+                                                )</button>
+
+
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div id="output">
+                                    <div id="result">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="syntax">
+                                <ul id="syngen">
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="viewPage">
+                            <div id="parent1">
+                                <form id="databaseshow">
+                                    <h1>DATABASE</h1>
+                                  
+                                </form>
+                                <form id="tableshow">
+                                    <h1>TABLE</h1>
+                                    
+                                </form>
+                                <div id="resultshow">
+                                    <h1>TABLE DATA</h1>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="connectarea" class="animate__animated animate__fadeIn">
+                        <div id="viewuser" onclick="remoteuserget()" >User List</div>
+                        <div class="addcontainer">
+                            <!-- Form Container -->
+                            <div class="form-wrap">
+                                <h1>Add Machine</h1>
+                                <div class="signup-box">
+                                    <div class="left-box">
+                                        <form action="#" id="sqlbox">
+                                            <input type="text" placeholder=" IP" id="logip" class="form-control" autocomplete="off" />
+                                            <input type="text" placeholder="SQL Username " id="loguser"
+                                                class="form-control" autocomplete="off" />
+                                            <input type="password" placeholder="SQL Password " id="logpass"
+                                                class="form-control" autocomplete="off" />
+                                            <!-- <input type="password" placeholder=" Password " class="form-control" />
+                                <input type="password" placeholder=" Confirm Password " class="form-control" /> -->
+                                            <button type="button" onclick="remoteLog()">Add Now</button>
+                                        </form>
+                                    </div>
+                                    <div class="right-box">
+                                        <img src="Cloud_hosting-pana.svg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="conChangeDiv" class="changeDiv">
+                    <h1 id="main-title" class="animate__animated animate__bounce">Mysql --> Pgsql</h1>
+                    <main>
+                        <div class="container animate__animated animate__fadeIn">
+                            <textarea name="mysql" placeholder="Enter Mysql Command" class="mysql"
+                                id="mysql"></textarea>
+                            <img src="arrowr.png"
+                                alt="">
+                            <div name="pgsql" class="pgsql" id="pgsql"></div>
+                        </div>
+                        <div class="buttons">
+                            <button type="button" id="enter" class="animate__animated animate__handShake">Alter</button>
+                            <button type="button" id="clear">Clear</button>
+                        </div>
+                    </main>
+                </div>
+                <div id="monChangeDiv" id="frame" class="frame animate__animated animate__fadeIn">
+                    <h1 id="monitortop">Monitor</h1>
+                    <img id="monitor-img" src="Server_status-pana.svg"/>
+                    <h1 class="frame-title" id="sername">Server</h1>
+                    <select onchange="MysqlWorking(this)" id="drop" id="server" class="server">
+                        <option value="mysql">Mysql</option>
+                        <option value="postgresql">Postgresql</option>
+                    </select>
+                    <h1 class="frame-title">IP Address</h1>
+                    <input type="text" id="ip" class="frame-input input" placeholder="Ip" autocomplete="off">
+                    <h1 class="frame-title">Host Name</h1>
+                    <input type="text" id="username" class="frame-input input" placeholder="username" autocomplete="off">
+                    <h1 class="frame-title">System Password</h1>
+                    <input type="password" id="systempass" class="frame-input input" placeholder="Password" autocomplete="off">
+                    <button onclick="MysqlWorking(this)" value="status" id="switch" class="status">Status</button>
+                    <p id="statusShower" class="status-msg green">Active</p>
+                    <!-- <input type="checkbox  input" id="stop"> -->
+                    <label class="button" for="stop">
+                        <button class="stop" onclick="MysqlWorking(this)" id="switch" value="stop"
+                            type="button">Stop</button>
+                        <button class="start" onclick="MysqlWorking(this)" id="switch" value="start"
+                            type="button">Start</button>
+                    </label>
+                </div>
+                <div id="comChangeDiv" class="animate__animated animate__fadeIn">
+                    <!-- <div id="comimg"><img src="Server-bro.svg"/></div> -->
+                    <div id="blurbox" ></div>
+                    <div id="sqlSelect" class="comSelect">
+                        <button onclick="confProcess()" id="addbtn" type="button">Configuration</button>
+                        <button onclick="syncProcess()" id="confbtn" type="button">Synchronization</button>
+                    </div>
+                    <div id="addProcess" class="addProcess animate__animated animate__fade">
+                        <div id="masterAdd">
+                            <h1>SERVER MACHINE</h1>
+                            <!-- <label>IP Address</label> -->
+                            <input type="text" id="masterIp" placeholder="IP Address" autocomplete="off" />
+                            <!-- <label>MySQL username</label> -->
+                            <input type="text" id="masterName" placeholder="Mysql Username" autocomplete="off" />
+                            <!-- <label>MySQL Password</label> -->
+                            <input type="password" id="masterPass" placeholder="Mysql Password" autocomplete="off"/>
+                            <button name="processSync" type="button" onclick="masterClientAdd(this)"
+                                value="masterAdd">ADD</button>
+                        </div>
+                        <!-- <div id="sync-imgDiv"><img id="syncImg"
+                                src="https://www.shareicon.net/data/256x256/2015/04/11/21359_synchronize_256x256.png" />
+                        </div> -->
+
+                        <div id="clientAdd">
+                            <h1>CLIENT MACHINE</h1>
+                            <!-- <label>IP Address</label> -->
+                            <input type="text" id="clientIp" placeholder="IP Address" autocomplete="off"/>
+                            <!-- <label>MySQL username</label> -->
+                            <input type="text" id="clientName" placeholder="Mysql Username" autocomplete="off"/>
+                            <!-- <label>MySQL Password</label> -->
+                            <input type="password" id="clientPass" placeholder="Mysql Password" autocomplete="off"/>
+                            <input type="text" id="Database" placeholder="Mysql Database" autocomplete="off"/>
+                            <button onclick="clientShow()" id="cbtn">Client List</button>
+                            <button name="processSync" onclick="masterClientAdd(this)" type="button"
+                                value="clientAdd">ADD</button>
+                        </div>
+                    </div>
+                    <button id="reverse" onclick="showCut()">X</button>
+                    <div id="userBox">
+                        <h1>Client List</h1>
+                        
+                    </div>
+                    <div id="syncBox" class="syncBox">
+                        <h1>Sync Tab</h1>
+                        <!-- <label>Enter Database Name:-</label> -->
+                        <input type="text" id="databaseName" placeholder="Enter Database Name" autocomplete="off"/>
+                        <!-- <label>Enter table Name:-</label> -->
+                        <!-- <input type="text" id="tableName" placeholder="Enter Table Name"/> -->
+                        <label>Query:-</label>
+                        <textarea placeholder="Enter a Query" id="syncQuery"></textarea>
+                        <button name="processSync" onclick="syncShow()" type="button" value="querySync">DB-Sync</button>
+                    </div>
+                    <div id="queryResult"></div>
+                    <div id="userviewPage">
+                        <div id="addlogosync" onclick="addSyncClient()"><span id="addingLogo"
+                            class="material-symbols-outlined">
+                            arrow_back
+                        </span></div>
+                        <div id="parent1">
+                            <div id="userdatabaseshow">
+                                <h1>DATABASE</h1>
+
+                            </div>
+                            <div id="usertableshow">
+                                <h1>TABLE</h1>
+
+                            </div>
+                            <div id="userresultshow">
+                                <h1>TABLE DATA</h1>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+</body>
+<script src="Base.js"></script>
+<script src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.7.2/dist/sweetalert2.all.min.js
+"></script>
+<script>
+
+
+    function _(value) {
+        return document.getElementById(value);
+    }
+
+    let psqlcount=0;
+    let mysqlcount=1;
+    let create=1;
+    let view=0;
+
+
+    function playGround() {
+        playgroundchange();
+        mysqlProcess();
+        createProcess();
+    }
+    function playGroundPsql() {
+        playgroundchange();
+        psqlProcess();
+        createProcess();
+    }
+    function PlayMysqlView() {
+        playgroundchange();
+        mysqlProcess();
+        viewProcess();
+    }
+    function PlaypsqlView() {
+        playgroundchange();
+        psqlProcess();
+        viewProcess();
+    }
+    function PlaypsqlCreate() {
+        playgroundchange();
+        psqlProcess();
+        createProcess();
+    }
+
+
+
+
+    function clientShow(){
+        _("userBox").style.display="flex";
+        // _("userBox").classList.add("blurOff");
+        _("reverse").style.display="block";
+       _("blurbox").style.display="block";
+
+    }
+
+    function showCut(){
+        _("userBox").style.display="none";
+        _("reverse").style.display="none";
+        _("blurbox").style.display="none";
+    }
+
+
+
+    function addsqlremoteClient() {
+        _("connectsql").style.display = "flex";
+        _("sqlworkarea").style.display = "none";
+        _("Clientlist").style.display = "block";
+        _("mysqluser").value = "";
+        _("mysqlpass").value = "";
+        _("mainuser").value = "";
+        _("mainpass").value = "";
+        _("sqlipadd").value = "";
+         _("sqltoipadd").value="";
+    }
+    function sqlclientadd() {
+        _("connectsql").style.display = "none";
+        _("sqlworkarea").style.display = "block";
+        _("folder").value = "";
+        _("filename").value = "";
+        sqlremoteuserget();
+        document.getElementById("sqldatabase").innerHTML = "<img src='Server-cuate.svg'/>";
+    }
+    function addSyncClient(){
+        // _("comimg").style.display="block";
+        _("addProcess").style.display = "flex";
+
+        _("userBox").style.display = "none";
+        _("reverse").style.display = "none";
+        _("queryResult").style.display = "none";
+        _("syncBox").style.display = "none";
+        _("userviewPage").style.display="none";
+        _("blurbox").style.display="none";
+
+    }
+
+    function logout(){
+        const x = new XMLHttpRequest();
+    x.onreadystatechange = function(){
+        if (x.readyState == 4 && x.status == 200){
+            var data = JSON.parse(x.responseText);
+          console.log(data)
+          
+          if (data["loginStatus"] == "fail") {
+           document.cookie = "username=";
+              location.href = "loginSample.html";
+          }
+          else {
+            document.cookie = "username=";
+        	  location.href = "loginSample.html";
+          }
+            }
+
+        }
+    x.open("get","Signpage?type=logout");
+    x.send();
+    }
+
+    function csvData() {
+        let csvdatabase = _("csvdatabase").value;
+        let csvtable = _("csvtable").value;
+        let csvfolder = _("csvfolder").value;
+        let csvfilename = _("csvfilename").value;
+        let uservalue = _("sqlremoteusers").value;
+        if (csvdatabase != "" && csvtable != "" && csvfolder != "" && csvfilename != "") {
+            const x = new XMLHttpRequest();
+            x.onreadystatechange = function () {
+                if(x.readyState!=4){
+
+Swal.fire({
+title: 'Inserting',
+
+timer: 3000,
+timerProgressBar: true,
+didOpen: () => {
+Swal.showLoading()
+const b = Swal.getHtmlContainer().querySelector('b')
+timerInterval = setInterval(() => {
+b.textContent = Swal.getTimerLeft()
+}, 100)
+},
+willClose: () => {
+clearInterval(timerInterval)
+}
+}).then((result) => {
+/* Read more about handling dismissals below */
+if (result.dismiss === Swal.DismissReason.timer) {
+console.log('I was closed by the timer')
+}
+})
+    }
+                if (x.readyState == 4) {
+                    if (x.status == 200) {
+                        var jsonobj = JSON.parse(x.responseText);
+                        console.log(jsonobj);
+                        if (jsonobj["process"] == "success") {
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'Booyah...',
+                                text: 'Successfully Inserted!',
+                                showConfirmButton: false,
+                                timer: 1500
+                            })
+                            tableShow(csvdatabase, csvtable, csvfolder, csvfilename, uservalue);
+                        } else {
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Oops...',
+                                text: 'Something went wrong!',
+                                showConfirmButton: false,
+                                timer: 1500
+                            })
+                        }
+                    }
+
+                }
+            }
+
+
+            x.open("get", "CsvConvert?uservalue=" + uservalue + "&csvfolder=" + csvfolder + "&csvfilename=" + csvfilename + "&csvdatabase=" + csvdatabase + "&csvtable=" + csvtable);
+            x.send();
+        }
+        else {
+            Swal.fire({
+                                icon: 'error',
+                                title: 'Oops...',
+                                text: 'Recheck the values!',
+                                showConfirmButton: false,
+                                timer: 1500
+                            })
+        }
+    }
+    function tableShow(csvdatabase, csvtable, csvfolder, csvfilename, uservalue) {
+        const x = new XMLHttpRequest();
+      //  document.getElementById("sqldatabase").innerHTML = "";
+        x.onreadystatechange = function () {
+            if (x.readyState == 4) {
+                if (x.status == 200) {
+                    var jsonobj = x.response;
+                    document.getElementById("sqldatabase").innerHTML = "";
+                    document.getElementById("sqldatabase").innerHTML += "<h1>CSV File Data</h1>";
+                    document.getElementById("sqldatabase").innerHTML += jsonobj;
+                }
+            }
+        }
+        x.open("get", "CsvTableShow?uservalue=" + uservalue + "&csvfolder=" + csvfolder + "&csvfilename=" + csvfilename + "&csvdatabase=" + csvdatabase + "&csvtable=" + csvtable);
+        x.send();
+    }
+
+
+    function insertion() {
+        let folder = _("folder").value;
+        let file = _("filename").value;
+        let uservalue = _("sqlremoteusers").value;
+        if (folder != "" && file != "") {
+
+
+
+   
+            const x = new XMLHttpRequest();
+            x.onreadystatechange = function () {
+
+                if(x.readyState!=4){
+
+            Swal.fire({
+  title: 'Inserting',
+  
+  timer: 3000,
+  timerProgressBar: true,
+  didOpen: () => {
+    Swal.showLoading()
+    const b = Swal.getHtmlContainer().querySelector('b')
+    timerInterval = setInterval(() => {
+      b.textContent = Swal.getTimerLeft()
+    }, 100)
+  },
+  willClose: () => {
+    clearInterval(timerInterval)
+  }
+}).then((result) => {
+  /* Read more about handling dismissals below */
+  if (result.dismiss === Swal.DismissReason.timer) {
+    console.log('I was closed by the timer')
+  }
+})
+                }
+                if (x.readyState == 4) {
+                    if (x.status == 200) {
+                        var jsonobj = JSON.parse(x.responseText);
+                        if (jsonobj["process"] == "success") {
+                            showResult();
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'Booyah...',
+                                text: 'Successfully Inserted!',
+                                showConfirmButton: false,
+                                timer: 1500
+                            })
+                        } else {
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Oops...',
+                                text: 'Something went wrong!',
+                                showConfirmButton: false,
+                                timer: 1500
+                            })
+                        }
+                    }
+
+                }
+            }
+
+
+            x.open("get", "Insertion?uservalue=" + uservalue + "&folder=" + folder + "&file=" + file);
+            x.send();
+        }
+        else {
+            Swal.fire({
+                                icon: 'error',
+                                title: 'Oops...',
+                                text: 'Something went wrong!',
+                                showConfirmButton: false,
+                                timer: 1500
+                            })
+        }
+    }
+
+    function showResult() {
+        const x = new XMLHttpRequest();
+        let uservalue = _("sqlremoteusers").value;
+        x.onreadystatechange = function () {
+            if (x.readyState == 4) {
+                if (x.status == 200) {
+                    var jsonobj = JSON.parse(x.responseText);
+                    var size = Object.keys(jsonobj).length;
+                    console.log(jsonobj);
+
+                    document.getElementById("sqldatabase").innerHTML = "";
+                    document.getElementById("sqldatabase").innerHTML = "<h1>DATABASE</h1>";
+                    Object.keys(jsonobj).forEach(function (key) {
+                        let values = jsonobj[key];
+                        console.log(values);
+                        var but = document.createElement("button");
+                        but.setAttribute("value", values);
+                        but.setAttribute("type", "button");
+                        but.innerText = values;
+                        let idCheck = document.getElementById("sqldatabase");
+                        idCheck.append(but);
+                    });
+                }
+            }
+        }
+        x.open("post", "SqlDumper?uservalue=" + uservalue);
+        x.send();
+    }
+
+    function addNow() {
+        let myuser = _("mysqluser").value;
+        let mypass = _("mysqlpass").value;
+        let sysuser = _("mainuser").value;
+        let syspass = _("mainpass").value;
+        let sqltoipadd = _("sqltoipadd").value;
+        let ipadd = _("sqlipadd").value;
+        if (myuser != "" && mypass != "" && sysuser != "" && syspass != "" && ipadd != "") {
+            const x = new XMLHttpRequest();
+            x.onreadystatechange = function () {
+                if (x.readyState == 4) {
+                    if (x.status == 200) {
+                        var jsonobj = JSON.parse(x.responseText);
+                        console.log("A" + jsonobj["connect"]);
+                        if (jsonobj["connect"] == "success") {
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'Booyah...',
+                                showConfirmButton: false,
+                                timer: 1000
+                            })
+                            _("sqlworkarea").style.display = "block";
+                            _("connectsql").style.display = "none";
+                            _("viewuser").style.display = "none";
+                            sqlremoteuserget();
+                            showResult();
+                        }
+                        else {
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Oops...',
+                                text: 'Something went wrong!',
+                                showConfirmButton: false,
+                                timer: 1500
+                            })
+                        }
+                    }
+
+                }
+            }
+
+
+            x.open("post", "AddSqlClient?myuser=" + myuser + "&mypass=" + mypass + "&sysuser=" + sysuser + "&syspass=" + syspass + "&ipadd=" + ipadd+"&sqltoipadd="+sqltoipadd);
+            x.send();
+        }
+        else {
+            Swal.fire({
+                                icon: 'error',
+                                title: 'Oops...',
+                                text: 'Recheck the values!',
+                                showConfirmButton: false,
+                                timer: 1500
+                            })
+        }
+    }
+    
+    
+
+
+    let nowUser="";
+    let nowIp="";
+    let nowPass="";
+
+    function masterClientAdd(ele) {
+        let addType = ele.value;
+        console.log("f" + addType)
+        const x = new XMLHttpRequest();
+        let clientUsername, massUsername, massUserIp, massUserPass, clientUserIp, clientUserPass;
+        if (addType == "masterAdd") {
+            massUsername = _("masterName").value;
+            massUserIp = _("masterIp").value;
+            massUserPass = _("masterPass").value;
+            nowUser=massUsername;
+            nowIp=massUserIp;
+            nowPass=massUserPass;
+        } else {
+            clientUsername = _("clientName").value;
+            clientUserIp = _("clientIp").value;
+            clientUserPass = _("clientPass").value;
+            Database = _("Database").value;
+        }
+        x.onreadystatechange = function () {
+            if(x.readyState!=4 && addType != "masterAdd"){
+
+Swal.fire({
+title: 'Syncing is on progress',
+
+timer: 3000,
+timerProgressBar: true,
+didOpen: () => {
+Swal.showLoading()
+const b = Swal.getHtmlContainer().querySelector('b')
+timerInterval = setInterval(() => {
+b.textContent = Swal.getTimerLeft()
+}, 100)
+},
+willClose: () => {
+clearInterval(timerInterval)
+}
+}).then((result) => {
+/* Read more about handling dismissals below */
+if (result.dismiss === Swal.DismissReason.timer) {
+console.log('I was closed by the timer')
+}
+})
+    }
+            if (x.readyState == 4 && x.status == 200) {
+                var jsonobj = JSON.parse(x.responseText);
+                console.log(jsonobj)
+                if (addType == "masterAdd") {
+                    if (jsonobj["Master"] == "success") {
+                        Swal.fire({
+                                icon: 'success',
+                                title: 'Booyah...',
+                                text: 'Server Machine added successfully..!',
+                                showConfirmButton: false,
+                                timer: 1000
+                            })
+                        _("masterAdd").innerHTML = "";
+                        _("masterAdd").innerHTML += `<h1 class='master'>Master</h1>`;
+                        // _("masterAdd").innerHTML += `<h2>${massUsername}</h2>`;
+                        _("masterAdd").innerHTML += `<h4 class='masterip'>(${massUserIp})</h4>`;
+                        // _("masterAdd").innerHTML += `<h1>${massUserPass}</h1>`;
+                        _("masterAdd").classList.add('aftermasteradd');
+                    }
+                    else {
+                        Swal.fire({
+                                icon: 'error',
+                                title: 'Oops...',
+                                text: "Couldn't add Server machine!",
+                                showConfirmButton: false,
+                                timer: 1500
+                            })
+                    }
+                }
+                else {
+                    if (jsonobj["Client"] == "success") {
+
+                        Swal.fire({
+                                icon: 'success',
+                                title: 'Booyah...',
+                                text: 'Synced","Successsfully Values are inserted!',
+                                showConfirmButton: false,
+                                timer: 1500
+                            })
+                        
+                        clientList();
+                    }
+                    else {
+                        Swal.fire({
+                                icon: 'error',
+                                title: 'Oops...',
+                                text: "Couldn't add client machine!",
+                                showConfirmButton: false,
+                                timer: 1500
+                            })
+                        
+                    }
+                }
+
+            }
+
+        }
+
+        if (addType == "masterAdd") {
+            x.open("get", "MasterClient?currentMasterName=" + massUsername + "&currentUserIp=" + massUserIp + "&currentUserPass=" + massUserPass + "&addType=" + addType);
+        }
+        else {
+            x.open("get", "MasterClient?clientName=" + clientUsername + "&clientIp=" + clientUserIp + "&clientPass=" + clientUserPass + "&addType=" + addType + "&Database=" + Database);
+        }
+        x.send();
+        satheesh();
+    }
+
+    function satheesh(){
+        console.log("harini");
+        let textArea = document.getElementById("masterAdd").innerText;
+        console.log(textArea);
+      
+        if((textArea.includes("Master"))){
+        // _("userBox").style.display = "block";
+        console.log("working da");
+
+        }
+    }
+
+
+    function clientList() {
+        const x = new XMLHttpRequest();
+        x.onreadystatechange = function () {
+            if (x.readyState == 4 && x.status == 200) {
+                // document.getElementById("addProcess").classList.add("afteraddprocess");
+                var jsonobj = JSON.parse(x.responseText);
+                document.getElementById("userBox").innerHTML = "";
+                document.getElementById("userBox").innerHTML = `<h1>Client List</h1>`;
+                // document.getElementById("userBox").style.display = "flex";
+                // document.getElementById("userBox").classList.add("afteruseradd");
+                Object.keys(jsonobj).forEach(function (key) {
+                    let values = jsonobj[key];
+                    console.log(values);
+                    var but = document.createElement("button");
+                    but.setAttribute("value", values);
+                    but.setAttribute("onclick", "userDatabase(this)");
+                    but.setAttribute("class", "userdbbtn");
+                    but.innerText = values;
+                    let idCheck = document.getElementById("userBox");
+                    idCheck.append(but);
+                });
+            }
+        }
+        x.open("get", "clientdb");
+        x.send();
+    }
+
+
+    function remoteLog() {
+        event.preventDefault();
+        let ip = document.getElementById("logip").value;
+        let user = document.getElementById("loguser").value;
+        let pass = document.getElementById("logpass").value;
+        const x = new XMLHttpRequest();
+        x.onreadystatechange = function () {
+            if (x.readyState == 4) {
+                if (x.status == 200) {
+                    var jsonobj = JSON.parse(x.responseText);
+                    console.log("A" + jsonobj["connect"]);
+                    if (jsonobj["connect"] == "success") {
+                        Swal.fire({
+                                icon: 'success',
+                                title: 'Booyah...',
+                                text: 'User added successfully..!',
+                                showConfirmButton: false,
+                                timer: 1000
+                            })
+                        _("playarea").style.display = "block";
+                        _("connectarea").style.display = "none";
+                        _("viewuser").style.display = "none";
+                        remoteuserget();
+                    }
+                    else {
+                        Swal.fire({
+                                icon: 'error',
+                                title: 'Oops...',
+                                text: 'Something went wrong!',
+                                showConfirmButton: false,
+                                timer: 1500
+                            })
+                    }
+                }
+
+            }
+        }
+
+
+        x.open("get", "checker?logip=" + ip + "&username=" + user + "&password=" + pass);
+        x.send();
+    }
+
+    function remoteuserget() {
+        event.preventDefault();
+        const x = new XMLHttpRequest();
+        _("playarea").style.display = "block";
+        _("connectarea").style.display = "none";
+        _("viewuser").style.display = "none";
+        document.getElementById("logip").value = "";
+        document.getElementById("loguser").value = "";
+        document.getElementById("logpass").value = "";
+        x.onreadystatechange = function () {
+            if (x.readyState == 4) {
+                if (x.status == 200) {
+                	_("playarea").classList.add("animate__animated");
+                	_("playarea").classList.add("animate__fadeIn");
+                    var jsonobj = JSON.parse(x.responseText);
+                    var size = Object.keys(jsonobj).length;
+                    console.log(jsonobj);
+
+                    document.getElementById("remoteuser").innerHTML = "";
+                    Object.keys(jsonobj).forEach(function (key) {
+                        let values = jsonobj[key];
+                        console.log(values);
+                        var but = document.createElement("option");
+                        but.setAttribute("value", values);
+                        but.innerText = values;
+                        let idCheck = document.getElementById("remoteuser");
+                        idCheck.append(but);
+                    });
+                }
+                mysqlDatabase();
+                psqlDatabase();
+
+            }
+        }
+        x.open("get", "RemoteUser");
+        x.send();
+    }
+
+    function sqlremoteuserget() {
+        event.preventDefault();
+        const x = new XMLHttpRequest();
+        _("sqlworkarea").style.display = "block";
+        _("connectsql").style.display = "none";
+        _("viewuser").style.display = "none";
+        document.getElementById("mysqluser").value = "";
+        document.getElementById("mysqlpass").value = "";
+        document.getElementById("mainuser").value = "";
+        document.getElementById("mainpass").value = "";
+        document.getElementById("sqlipadd").value = "";
+        x.onreadystatechange = function () {
+            if (x.readyState == 4) {
+                if (x.status == 200) {
+                    var jsonobj = JSON.parse(x.responseText);
+                    var size = Object.keys(jsonobj).length;
+                    console.log(jsonobj);
+
+                    document.getElementById("remoteuser").innerHTML = "";
+                    document.getElementById("sqlremoteusers").innerHTML = "";
+                    Object.keys(jsonobj).forEach(function (key) {
+                        let values = jsonobj[key];
+                        console.log(values);
+                        var but = document.createElement("option");
+                        but.setAttribute("value", values);
+                        but.innerText = values;
+                        let idCheck = document.getElementById("sqlremoteusers");
+                        idCheck.append(but);
+                    });
+                }
+
+            }
+        }
+        x.open("get", "SqlRemoteUser");
+        x.send();
+    }
+
+    function databasesValues() {
+        mysqlDatabase();
+        psqlDatabase();
+    }
+
+    function syncShow() {
+        event.preventDefault();
+        let queryDatabase = document.getElementById("databaseName").value;
+        let userquery = document.getElementById("syncQuery").value;
+        if(queryDatabase && userquery){
+            // _("queryResult").style.display = "block";
+        }
+        const x = new XMLHttpRequest();
+        x.onreadystatechange = function () {
+            if (x.readyState == 4) {
+                if (x.status == 200) {
+                 /*   document.getElementById("syncBox").classList.add("aftersyncbox");  */
+                    var jsonobj = x.responseText;
+                    console.log("aaa"+jsonobj);
+                    if(jsonobj=="true"){
+                        syncansShow(userquery,queryDatabase);
+                    }
+                    else{
+                        syncansShow(userquery,queryDatabase);
+                    }
+
+                   
+                    
+                  
+                }
+
+            }
+        }
+
+
+        x.open("get", "DbUpdate?clientquery=" + userquery + "&queryDatabase=" + queryDatabase);
+        x.send();
+    }
+
+
+
+    function syncansShow(userquery,database) {
+        event.preventDefault();
+        const x = new XMLHttpRequest();
+        x.onreadystatechange = function () {
+            if (x.readyState == 4) {
+                if (x.status == 200) {
+                    var jsonobj = x.responseText;
+                    console.log(jsonobj);
+                    jsonobj=jsonobj.replaceAll("<br>","");
+
+                    document.getElementById("syncQuery").value = "";
+                    Swal.fire({
+                                icon: 'success',
+                                title: 'Booyah...',
+                                text: jsonobj,
+                            })
+                    // document.getElementById("queryResult").innerHTML = jsonobj;
+                }
+
+            }
+        }
+
+
+        x.open("get", "SyncCreate?query=" + userquery+"&database="+database+"&currentUserIp="+nowIp+"&currentMasterName="+nowUser+"&currentUserPass="+nowPass);
+        x.send();
+    }
+
+    
+
+
+    function addremoteClient() {
+        _("playarea").style.display = "none";
+        _("connectarea").style.display = "block";
+        _("viewuser").style.display = "block";
+    }
+    // let inputs=document.querySelectorAll("input");
+    // console.log(inputs);
+    // for(let i=3;i<inputs.length;i++){
+    //     inputs[i].addEventListener("click","boxShadow(this)")
+    // }
+
+
+    function psqlProcess() {
+        _("postbtn").style.backgroundColor = "#4649BF";
+        _("postbtn").style.color = "white";
+        _("mysqlbtn").style.backgroundColor = "white";
+        _("mysqlbtn").style.color = "#4649BF";
+        _("mysqlbtn").style.borderBottom = "0px solid black";
+        _("postbtn").style.borderBottom = "5px solid #4649BF";
+        psqlcount=1;
+        mysqlcount=0;
+        frameChanger();
+    }
+
+    function mysqlProcess() {
+        _("postbtn").style.backgroundColor = "white";
+        _("postbtn").style.color = "#4649BF";
+        _("mysqlbtn").style.backgroundColor = "#4649BF";
+        _("mysqlbtn").style.color = "white";
+        _("mysqlbtn").style.borderBottom = "5px solid #4649BF";
+        _("postbtn").style.borderBottom = "0px solid black";
+        psqlcount=0;
+        mysqlcount=1;
+        frameChanger();
+    }
+    function createProcess() {
+    	_("result").innerHTML="";
+        _("viewbtn").style.backgroundColor = "white";
+        _("viewbtn").style.color = "#4649BF";
+        _("createbtn").style.backgroundColor = "#4649BF";
+        _("createbtn").style.color = "white";
+        _("createbtn").style.borderBottom = "5px solid #4649BF";
+        _("viewbtn").style.borderBottom = "0px solid black";
+        create=1;
+        view=0;
+        frameChanger();
+    }
+    function viewProcess() {
+        _("viewbtn").style.backgroundColor = "#4649BF";
+        _("viewbtn").style.color = "white";
+        _("createbtn").style.backgroundColor = "white";
+        _("createbtn").style.color = "#4649BF";
+        _("createbtn").style.borderBottom = "0px solid black";
+        _("viewbtn").style.borderBottom = "5px solid #4649BF";
+        create=0;
+        view=1;
+        frameChanger();
+    }
+    function sqldump() {
+        _("sqlconbtn").style.backgroundColor = "#4649BF";
+        _("sqlconbtn").style.color = "white";
+        _("csvbtn").style.backgroundColor = "white";
+        _("csvbtn").style.color = "#4649BF";
+        _("csvfilesec").style.display = "none";
+        _("sqlfilesec").style.display = "flex";
+        document.getElementById("sqldatabase").innerHTML = "<img src='Server-cuate.svg''/>";
+        _("folder").value = "";
+        _("filename").value = "";
+    }
+    function csvcon() {
+        _("csvbtn").style.backgroundColor = "#4649BF";
+        _("csvbtn").style.color = "white";
+        _("sqlconbtn").style.backgroundColor = "white";
+        _("sqlconbtn").style.color = "#4649BF";
+        _("csvfilesec").style.display = "flex";
+        _("sqlfilesec").style.display = "none";
+        document.getElementById("sqldatabase").innerHTML = "<img src='Server-cuate.svg'/>";
+        _("csvfolder").value = "";
+        _("csvfilename").value = "";
+        _("csvdatabase").value = "";
+        _("csvtable").value = "";
+
+    }
+
+    function syncProcess() {
+
+        _("confbtn").style.backgroundColor = "#4649BF";
+        _("confbtn").style.color = "white";
+        _("addbtn").style.backgroundColor = "white";
+        _("addbtn").style.color = "#4649BF"
+        _("addbtn").style.borderBottom = "0px solid black";
+        _("confbtn").style.borderBottom = "5px solid #4649BF";
+        _("addProcess").style.display = "none";
+        _("userBox").style.display = "none";
+        _("reverse").style.display="none";
+        // _("comimg").style.display="none";
+        // _("queryResult").style.display = "block";
+        _("syncBox").style.display = "flex";
+        _("userviewPage").style.display="none";
+    }
+    function confProcess() {
+        // _("comimg").style.display="block";
+        _("confbtn").style.backgroundColor = "white";
+        _("confbtn").style.color = "#4649BF";
+        _("addbtn").style.backgroundColor = "#4649BF";
+        _("addbtn").style.color = "white";
+        _("addbtn").style.borderBottom = "5px solid #4649BF";
+        _("confbtn").style.borderBottom = "0px solid black";
+        _("addProcess").style.display = "flex";
+        _("userBox").style.display = "none";
+        _("reverse").style.display="none";
+        _("queryResult").style.display = "none";
+        _("syncBox").style.display = "none";
+        _("userviewPage").style.display="none";
+        satheesh();
+    }
+
+    function frameChanger() {
+        if (psqlcount==1 && create==1) {
+            psqlCreator();
+            summa();
+        }
+        else if (mysqlcount==1 && create==1) {
+            mysqlCreator();
+        }
+        else if (psqlcount==1 && view==1) {
+            psqlViewer();
+            psqlDatabase();
+
+        }
+        else if (mysqlcount==1 && view==1) {
+            mysqlViewer();
+            mysqlDatabase();
+        }
+        else {
+            mysqlViewer();
+        }
+    }
+
+
+    function convertor() {
+        document.querySelector(".top-one").style.backgroundColor="white";
+        _("Homebtn").style.backgroundColor = "#4649BF";
+        _("Homebtn").style.color = "white";
+        _("Commbtn").style.backgroundColor = "#4649BF";
+        _("Commbtn").style.color = "white";
+        _("Monbtn").style.backgroundColor = "#4649BF";
+        _("Monbtn").style.color = "white";
+        _("Playbtn").style.backgroundColor = "#4649BF";
+        _("Playbtn").style.color = "white";
+        _("Conbtn").style.backgroundColor = "white";
+        _("Conbtn").style.color = "#4649BF";
+        _("sqlfilebtn").style.backgroundColor = "#4649BF";
+        _("sqlfilebtn").style.color = "white";
+        _("sqlFile").style.display = "none";
+        _("home").style.display = "none";
+        _("playChangeDiv").style.display = "none";
+        _("conChangeDiv").style.display = "block";
+        _("comChangeDiv").style.display = "none";
+        _("monChangeDiv").style.display = "none";
+
+
+
+    }
+    function sqlFile() {
+        document.querySelector(".top-one").style.backgroundColor="white";
+        _("Homebtn").style.backgroundColor = "#4649BF";
+        _("Homebtn").style.color = "white";
+        _("Commbtn").style.backgroundColor = "#4649BF";
+        _("Commbtn").style.color = "white";
+        _("Monbtn").style.backgroundColor = "#4649BF";
+        _("Monbtn").style.color = "white";
+        _("Playbtn").style.backgroundColor = "#4649BF";
+        _("Playbtn").style.color = "white";
+        _("Conbtn").style.backgroundColor = "#4649BF";
+        _("Conbtn").style.color = "white";
+        _("sqlfilebtn").style.backgroundColor = "white";
+        _("sqlfilebtn").style.color = "#4649BF";
+        _("home").style.display = "none";
+        _("playChangeDiv").style.display = "none";
+        _("conChangeDiv").style.display = "none";
+        _("comChangeDiv").style.display = "none";
+        _("monChangeDiv").style.display = "none";
+        _("sqlFile").style.display = "flex";
+
+
+    }
+
+    function playgroundchange() {
+        document.querySelector(".top-one").style.backgroundColor="white";
+        _("connectarea").style.display="block";
+        _("playarea").style.display="none";
+        _("resultshow").style.innerHTML="";
+        _("result").style.innerHTML="";
+        _("code").value="";
+        _("tableshow").style.innerHTML="";
+        _("Homebtn").style.backgroundColor = "#4649BF";
+        _("Homebtn").style.color = "white";
+        _("Commbtn").style.backgroundColor = "#4649BF";
+        _("Commbtn").style.color = "white";
+        _("Monbtn").style.backgroundColor = "#4649BF";
+        _("Monbtn").style.color = "white";
+        _("Playbtn").style.backgroundColor = "white";
+        _("Playbtn").style.color = "#4649BF";
+        _("Conbtn").style.backgroundColor = "#4649BF";
+        _("Conbtn").style.color = "white";
+        _("sqlfilebtn").style.backgroundColor = "#4649BF";
+        _("sqlfilebtn").style.color = "white";
+        _("home").style.display = "none";
+        _("playChangeDiv").style.display = "flex";
+        _("conChangeDiv").style.display = "none";
+        _("comChangeDiv").style.display = "none";
+        _("monChangeDiv").style.display = "none";
+        _("sqlFile").style.display = "none"; 
+        _("viewuser").style.display = "block"; 
+        
+
+
+    }
+
+    function monitor() {
+        document.querySelector(".top-one").style.backgroundColor="white";
+        _("Homebtn").style.backgroundColor = "#4649BF";
+        _("Homebtn").style.color = "white";
+        _("Commbtn").style.backgroundColor = "#4649BF";
+        _("Commbtn").style.color = "white";
+        _("Monbtn").style.backgroundColor = "white";
+        _("Monbtn").style.color = "#4649BF";
+        _("Playbtn").style.backgroundColor = "#4649BF";
+        _("Playbtn").style.color = "white";
+        _("Conbtn").style.backgroundColor = "#4649BF";
+        _("Conbtn").style.color = "white";
+        _("sqlfilebtn").style.backgroundColor = "#4649BF";
+        _("sqlfilebtn").style.color = "white";
+        _("home").style.display = "none";
+        _("playChangeDiv").style.display = "none";
+        _("conChangeDiv").style.display = "none";
+        _("monChangeDiv").style.display = "block";
+        _("comChangeDiv").style.display = "none";
+        _("sqlFile").style.display = "none";
+
+
+    }
+    function HomeChanger() {
+        if(flag){
+            document.querySelector(".top-one").style.backgroundColor="rgba(0,0,0,0.4)";
+        }
+        else{
+            document.querySelector(".top-one").style.backgroundColor="white";
+        }
+        _("Homebtn").style.backgroundColor = "white";
+        _("Homebtn").style.color = "#4649BF";
+        _("Commbtn").style.backgroundColor = "#4649BF";
+        _("Commbtn").style.color = "white";
+        _("Monbtn").style.backgroundColor = "#4649BF";
+        _("Monbtn").style.color = "white";
+        _("Playbtn").style.backgroundColor = "#4649BF";
+        _("Playbtn").style.color = "white";
+        _("Conbtn").style.backgroundColor = "#4649BF";
+        _("Conbtn").style.color = "white";
+        _("sqlfilebtn").style.backgroundColor = "#4649BF";
+        _("sqlfilebtn").style.color = "white";
+        _("home").style.display = "flex";
+        _("playChangeDiv").style.display = "none";
+        _("conChangeDiv").style.display = "none";
+        _("monChangeDiv").style.display = "none";
+        _("comChangeDiv").style.display = "none";
+        _("sqlFile").style.display = "none";
+
+
+    }
+
+    function communication() {
+        document.querySelector(".top-one").style.backgroundColor="white";
+        _("Homebtn").style.backgroundColor = "#4649BF";
+        _("Homebtn").style.color = "white";
+        _("Commbtn").style.backgroundColor = "white";
+        _("Commbtn").style.color = "#4649BF";
+        _("Monbtn").style.backgroundColor = "#4649BF";
+        _("Monbtn").style.color = "white";
+        _("Playbtn").style.backgroundColor = "#4649BF";
+        _("Playbtn").style.color = "white";
+        _("Conbtn").style.backgroundColor = "#4649BF";
+        _("Conbtn").style.color = "white";
+        _("sqlfilebtn").style.backgroundColor = "#4649BF";
+        _("sqlfilebtn").style.color = "white";
+        _("home").style.display = "none";
+        _("playChangeDiv").style.display = "none";
+        _("conChangeDiv").style.display = "none";
+        _("monChangeDiv").style.display = "none";
+        _("comChangeDiv").style.display = "block";
+        _("sqlFile").style.display = "none";
+        // _("userBox").style.display="none";
+        clientList();
+
+
+    }
+
+
+    function mysqlCreator() {
+        _("createPage").style.display = "flex";
+        _("viewPage").style.display = "none";
+        _("databasenameshow").style.display = "none";
+    }
+
+    function mysqlViewer() {
+        _("createPage").style.display = "none";
+        _("viewPage").style.display = "flex";
+        _("databasenameshow").style.display = "none";
+    }
+
+
+
+    function psqlCreator() {
+        _("createPage").style.display = "flex";
+        _("viewPage").style.display = "none";
+        _("databasenameshow").style.display = "block";
+    }
+    function psqlViewer() {
+        _("createPage").style.display = "none";
+        _("viewPage").style.display = "flex";
+        _("databasenameshow").style.display = "none";
+    }
+
+
+
+    const mysql = document.getElementById("mysql");
+    const pgsql = document.getElementById("pgsql");
+    const submit = document.getElementById("enter");
+    const clear = document.getElementById("clear");
+
+    submit.onclick = () => {
+        console.log(mysql.value);
+        let request = new XMLHttpRequest();
+        request.open("POST", `Mysql`);
+        console.log(request.responseText);
+        let str = JSON.stringify({ command: mysql.value });
+        console.log(str);
+        request.onreadystatechange = () => {
+            console.log(request.responseText)
+            let res = JSON.parse(request.responseText)
+            console.log(res.key);
+            if (request.status === 200) {
+                pgsql.innerText = res.key;
+            }
+            else {
+                pgsql.innerText = "Sorry for the inconvenience! There has been trouble in the internet!";
+            }
+            console.log(pgsql.innerHTML);
+
+        }
+
+
+        request.send(str);
+
+    }
+
+
+    clear.onclick = () => {
+        mysql.value = "";
+        pgsql.innerHTML="";
+        console.log(mysql.value);
+        console.log(pgsql.value);
+    }
+
+
+
+    let activemsg = document.querySelector('statusShower');
+    let stops = document.querySelector('.stop');
+    let start = document.querySelector('.start');
+
+
+
+
+    let inputvalue = _("code");
+
+    function add(ele) {
+        inputvalue.value = (inputvalue.value + ele.value).toLowerCase();
+        syntaxGenerator();
+        inputvalue.focus();
+    }
+    function clearing() {
+        result.innerText = "";
+        inputvalue.value = "";
+    }
+
+    function displayChange(ele) {
+        if (ele.innerText == "COMMANDS") {
+            _("commands").style.display = "block";
+            _("datatypes").style.display = "none";
+            _("functions").style.display = "none";
+        }
+        else if (ele.innerText == "DATATYPES") {
+            _("commands").style.display = "none";
+            _("datatypes").style.display = "block";
+            _("functions").style.display = "none";
+        }
+        else {
+            _("commands").style.display = "none";
+            _("datatypes").style.display = "none";
+            _("functions").style.display = "block";
+        }
+    }
+
+    function ansShow() {
+        event.preventDefault();
+        var userquery = document.getElementById("code").value;
+       let  databasename=_("databasenameshow").value;
+        const x = new XMLHttpRequest();
+        x.onreadystatechange = function () {
+            if (x.readyState == 4) {
+                if (x.status == 200) {
+                    var jsonobj = x.responseText;
+                    console.log(jsonobj);
+                    document.getElementById("code").value = "";
+                    document.getElementById("result").innerHTML = jsonobj;
+                }
+
+            }
+        }
+
+
+        if (psqlcount==1) {
+            x.open("get", "PsqlCreate?query=" + userquery + "&databaseName=" + databasename);
+        }
+        else {
+            x.open("get", "Create?query=" + userquery);
+        }
+
+        x.send();
+    }
+
+
+
+    function upGo(){
+        _("addremote").style.top="-4%";
+        _("sqlSelect").style.top="-4%";
+        _("optionSelect").style.top="-4%";
+        _("databasenameshow").style.top="-4%";
+    }
+
+
+    function syntaxGenerator() {
+        if ((inputvalue.value).includes("create")) {
+upGo();
+setTimeout(() => {
+                _("syntax").style.display = "block";
+            _("syngen").innerHTML = "";
+            _("syngen").innerHTML += `<h4>CREATE SYNTAX<h4>`;
+            _("syngen").innerHTML += `<li onclick="addQuery(this)">CREATE DATABASE databasename;</li>`;
+            _("syngen").innerHTML += `<li onclick="addQuery(this)">CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    column3 datatype,
+   ....
+);</li>`;
+}, 1000);
+        }
+        else if ((inputvalue.value).includes("update")) {
+            upGo();
+setTimeout(() => {
+            _("syntax").style.display = "block";
+            _("syngen").innerHTML = "";
+            _("syngen").innerHTML += `<h4>UPDATE SYNTAX<h4>`;
+            _("syngen").innerHTML += `<li onclick="addQuery(this)">UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;</li>`;
+}, 1000);
+        }
+        else if ((inputvalue.value).includes("insert")) {
+            upGo();
+setTimeout(() => {
+            _("syntax").style.display = "block";
+            _("syngen").innerHTML = "";
+            _("syngen").innerHTML += `<h4>INSERT SYNTAX<h4>`;
+            _("syngen").innerHTML += `<li onclick="addQuery(this)">INSERT INTO table_name (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...);</li>`;
+            _("syngen").innerHTML += `<li onclick="addQuery(this)">INSERT INTO table_name
+VALUES (value1, value2, value3, ...);</li>`;
+}, 1000);
+        }
+        else if ((inputvalue.value).includes("delete")) {
+            upGo();
+setTimeout(() => {
+            _("syntax").style.display = "block";
+            _("syngen").innerHTML = "";
+            _("syngen").innerHTML += `<h4>DELETE SYNTAX<h4>`;
+            _("syngen").innerHTML += `<li onclick="addQuery(this)">DELETE FROM table_name WHERE condition;</li>`;
+            _("syngen").innerHTML += `<li onclick="addQuery(this)">DELETE FROM table_name;</li>`;
+            _("syngen").innerHTML += `<li onclick="addQuery(this)">DELETE FROM Customers;</li>`;
+        }
+    , 1000);}
+        else if ((inputvalue.value).includes("select")) {
+            upGo();
+setTimeout(() => {
+            _("syntax").style.display = "block";
+            _("syngen").innerHTML = "";
+            _("syngen").innerHTML += `<h4>SELECT SYNTAX<h4>`;
+            _("syngen").innerHTML += `<li onclick="addQuery(this)">SELECT column1, column2, ...
+FROM table_name;</li>`;
+            _("syngen").innerHTML += `<li onclick="addQuery(this)">SELECT * FROM table_name;</li>`;
+        }, 1000); }
+        else if ((inputvalue.value).includes("drop")) {
+            upGo();
+setTimeout(() => {
+            _("syntax").style.display = "block";
+            _("syngen").innerHTML = "";
+            _("syngen").innerHTML += `<h4>DROP SYNTAX<h4>`;
+            _("syngen").innerHTML += `<li onclick="addQuery(this)">DROP DATABASE databasename;</li>`;
+            _("syngen").innerHTML += `<li onclick="addQuery(this)">DROP TABLE table_name;</li>`;
+        }, 1000); }
+        else if ((inputvalue.value).includes("use")) {
+            upGo();
+setTimeout(() => {
+            _("syntax").style.display = "block";
+            _("syngen").innerHTML = "";
+            _("syngen").innerHTML += `<h4>USE SYNTAX<h4>`;
+            _("syngen").innerHTML += `<li onclick="addQuery(this)">use databasename;</li>`;
+        }, 1000);  }
+        else if ((inputvalue.value).includes("alter")) {
+            upGo();
+setTimeout(() => {
+            _("syntax").style.display = "block";
+            _("syngen").innerHTML = "";
+            _("syngen").innerHTML += `<h4>ALTER SYNTAX<h4>`;
+            _("syngen").innerHTML += `<li onclick="addQuery(this)">ALTER TABLE table_name
+ADD column_name datatype;</li>`;
+            _("syngen").innerHTML += `<li onclick="addQuery(this)">ALTER TABLE table_name
+DROP COLUMN column_name;</li>`;
+            _("syngen").innerHTML += `<li onclick="addQuery(this)">ALTER TABLE table_name
+RENAME COLUMN old_name to new_name;</li>`;
+            _("syngen").innerHTML += `<li onclick="addQuery(this)">ALTER TABLE table_name
+MODIFY column_name datatype;</li>`;
+}, 1000);  }
+        else {
+            _("syntax").style.display = "none";
+            _("addremote").style.top="4%";
+        _("sqlSelect").style.top="4%";
+        _("optionSelect").style.top="4%";
+        _("databasenameshow").style.top="4%";
+        }
+    }
+
+    function summa() {
+        let getUser = _("remoteuser").value;
+        const x = new XMLHttpRequest();
+        console.log(getUser);
+        x.onreadystatechange = function () {
+            if (x.readyState == 4) {
+                if (x.status == 200) {
+                    var jsonobj = JSON.parse(x.responseText);
+                    var size = Object.keys(jsonobj).length;
+                    console.log(jsonobj);
+
+
+                    Object.keys(jsonobj).forEach(function (key) {
+                        let values = jsonobj[key];
+                        console.log(values);
+                        var but = document.createElement("option");
+                        but.setAttribute("value", values);
+                        but.innerText = values;
+                        let idCheck = document.getElementById("databasenameshow");
+                        idCheck.append(but);
+                    });
+                }
+
+            }
+        }
+
+        x.open("get", "Psqlshow?getUser=" + getUser);
+        x.send();
+    }
+
+    
+
+    function addQuery(ele) {
+        inputvalue.value = ele.innerText;
+    }
+
+
+
+    let dbvalue = "";
+    function mysqltable(ele) {
+        
+        event.preventDefault();
+        const x = new XMLHttpRequest();
+        console.log(x.readyState);
+        console.log(ele);
+        console.log(ele.target.value);
+        x.onreadystatechange = function () {
+            if (x.readyState == 4) {
+                if (x.status == 200) {
+                    var jsonobj = JSON.parse(x.responseText);
+                    var size = Object.keys(jsonobj).length;
+                    console.log(jsonobj);
+                    document.getElementById("resultshow").innerHTML = "";
+                    document.getElementById("tableshow").innerHTML = "";
+                    document.getElementById("tableshow").innerHTML = "<h1>TABLE</h1>";
+                    Object.keys(jsonobj).forEach(function (key) {
+                        let values = jsonobj[key];
+                        console.log(values);
+                        var but = document.createElement("button");
+                        but.setAttribute("value", values);
+                        but.innerText = values;
+                        but.setAttribute("onclick", "mysqltabledata(event)");
+                        let idCheck = document.getElementById("tableshow");
+                        idCheck.append(but);
+                    });
+                }
+
+            }
+        }
+        dbvalue = ele.target.value;
+        console.log(dbvalue);
+        x.open("get", "tableget?dbname=" + dbvalue);
+        x.send();
+    }
+
+
+
+
+    
+
+    function mysqlDatabase() {
+        
+        const x = new XMLHttpRequest();
+        let getUser = _("remoteuser").value;
+        console.log(x.readyState);
+        console.log(this);
+        console.log(this.value);
+        document.getElementById("databaseshow").innerHTML = "";
+        document.getElementById("databaseshow").innerHTML = "<h1>DATABASE</h1>";
+        x.onreadystatechange = function () {
+            if (x.readyState == 4) {
+                if (x.status == 200) {
+                    var jsonobj = JSON.parse(x.responseText);
+                    var size = Object.keys(jsonobj).length;
+                    console.log(jsonobj);
+
+                    document.getElementById("databaseshow").innerHTML = "";
+                    document.getElementById("databaseshow").innerHTML = "<h1>DATABASE</h1>";
+                     _("tableshow").innerHTML="";
+                    _("resultshow").innerHTML="";
+                    Object.keys(jsonobj).forEach(function (key) {
+                        let values = jsonobj[key];
+                        console.log(values);
+                        var but = document.createElement("button");
+                        but.setAttribute("value", values);
+                        but.setAttribute("onclick", "mysqltable(event)");
+                        but.innerText = values;
+                        let idCheck = document.getElementById("databaseshow");
+                        idCheck.append(but);
+                    });
+                }
+
+            }
+        }
+
+        x.open("get", "DB?getUser=" + getUser);
+        x.send();
+    }
+
+
+    function mysqltabledata(ele) {
+        event.preventDefault();
+        const x = new XMLHttpRequest();
+        console.log(x.readyState);
+        console.log(ele);
+        console.log(ele.target.value);
+        x.onreadystatechange = function () {
+            if (x.readyState == 4) {
+                if (x.status == 200) {
+                    _("f")
+                    var jsonobj = x.response;
+                    var size = jsonobj.length;
+
+                    console.log(jsonobj)
+
+                    document.getElementById("resultshow").innerHTML = jsonobj;
+                }
+            }
+        }
+        var dbtable = ele.target.value;
+        console.log(dbtable);
+        x.open("get", "tabledata?tableName=" + dbtable + "&database=" + dbvalue);
+        x.send();
+    }
+
+
+
+
+    function psqltable(ele) {
+        event.preventDefault();
+        const x = new XMLHttpRequest();
+        console.log(x.readyState);
+        console.log(ele);
+        console.log(ele.target.value);
+        x.onreadystatechange = function () {
+            if (x.readyState == 4) {
+                if (x.status == 200) {
+                    var jsonobj = JSON.parse(x.responseText);
+                    var size = Object.keys(jsonobj).length;
+                    console.log(jsonobj);
+                    document.getElementById("resultshow").innerHTML = "";
+                    document.getElementById("tableshow").innerHTML = "";
+                    document.getElementById("tableshow").innerHTML = "<h1>TABLE</h1>";
+                    Object.keys(jsonobj).forEach(function (key) {
+                        let values = jsonobj[key];
+                        console.log(values);
+                        var but = document.createElement("button");
+                        but.setAttribute("value", values);
+                        but.innerText = values;
+                        but.setAttribute("onclick", "psqltabledata(event)");
+                        let idCheck = document.getElementById("tableshow");
+                        idCheck.append(but);
+                    });
+                }
+
+            }
+        }
+        dbvalue = ele.target.value;
+        console.log(dbvalue);
+        x.open("get", "PsqlTable?psqldbname=" + dbvalue);
+        x.send();
+    }
+
+
+
+
+
+
+    function psqlDatabase() {
+        const x = new XMLHttpRequest();
+        let getUser = _("remoteuser").value;
+        console.log("data="+getUser);
+        document.getElementById("databaseshow").innerHTML = "";
+        document.getElementById("databaseshow").innerHTML = "<h1>DATABASE</h1>";
+        x.onreadystatechange = function () {
+            if (x.readyState == 4) {
+                if (x.status == 200) {
+                    var jsonobj = JSON.parse(x.responseText);
+                    var size = Object.keys(jsonobj).length;
+                    console.log(jsonobj);
+
+                    document.getElementById("databaseshow").innerHTML = "";
+                    document.getElementById("databaseshow").innerHTML = "<h1>DATABASE</h1>";
+                    _("tableshow").innerHTML="";
+                    _("resultshow").innerHTML="";
+                    Object.keys(jsonobj).forEach(function (key) {
+                        let values = jsonobj[key];
+                        console.log(values);
+                        var but = document.createElement("button");
+                        but.setAttribute("value", values);
+                        but.setAttribute("onclick", "psqltable(event)");
+                        but.innerText = values;
+                        let idCheck = document.getElementById("databaseshow");
+                        idCheck.append(but);
+                    });
+                }
+
+            }
+        }
+
+        x.open("get", "Psqlshow?getUser=" + getUser);
+        x.send();
+    }
+
+
+    function psqltabledata(ele) {
+        event.preventDefault();
+        const x = new XMLHttpRequest();
+        console.log(x.readyState);
+        console.log(ele);
+        console.log(ele.target.value);
+        x.onreadystatechange = function () {
+            if (x.readyState == 4) {
+                if (x.status == 200) {
+                    var jsonobj = x.response;
+                    var size = jsonobj.length;
+
+                    console.log(jsonobj)
+
+                    document.getElementById("resultshow").innerHTML = jsonobj;
+                }
+
+            }
+        }
+        var dbtable = ele.target.value;
+        console.log(dbtable);
+        x.open("get", "PsqlTableData?tableName=" + dbtable + "&database=" + dbvalue);
+        x.send();
+    }
+
+
+
+    let switchvalue = "";
+    function MysqlWorking(ele) {
+        event.preventDefault();
+        console.log("hello1");
+        _("statusShower").style.display = "none";
+        console.log("hello");
+        let sqlType = document.getElementById("drop").value;
+        console.log(sqlType);
+        let lapIp = document.getElementById("ip").value;
+        let lapusername = document.getElementById("username").value;
+        let lappass = document.getElementById("systempass").value;
+        event.preventDefault();
+        const x = new XMLHttpRequest();
+        switchvalue = ele.value;
+        if (lapusername != "" || lappass != "") {
+            x.onreadystatechange = function () {
+                if(x.readyState!=4){
+
+Swal.fire({
+title: 'Processing',
+
+timer: 3000,
+timerProgressBar: true,
+didOpen: () => {
+Swal.showLoading()
+const b = Swal.getHtmlContainer().querySelector('b')
+timerInterval = setInterval(() => {
+b.textContent = Swal.getTimerLeft()
+}, 100)
+},
+willClose: () => {
+clearInterval(timerInterval)
+}
+}).then((result) => {
+/* Read more about handling dismissals below */
+if (result.dismiss === Swal.DismissReason.timer) {
+console.log('I was closed by the timer')
+}
+})
+    }
+
+                if (x.readyState == 4) {
+                    if (x.status == 200) {
+                        var jsonobj = x.responseText;
+                        console.log(jsonobj);
+                        _("statusShower").style.display = "block";
+                        if (jsonobj.includes("inactive")) {
+                            swal.fire({
+                                icon: 'info',
+                                title: 'Down...',
+                                text: 'Server is inactive!',
+                                showConfirmButton: false,
+                                timer: 500})
+                            _("statusShower").innerText = "inactive";
+                            _("statusShower").classList.add('red');
+                            _("statusShower").classList.remove('green');
+                            start.style.display = "block";
+                            stops.style.display = "none";
+                        } else if (jsonobj.includes("active")) {
+
+                            swal.fire({
+                                icon: 'info',
+                                title: 'Alive...',
+                                text: 'Server is active!',
+                                showConfirmButton: false,
+                                timer: 500})
+                            _("statusShower").innerText = "active";
+                            _("statusShower").classList.add('green');
+                            _("statusShower").classList.remove('red');
+                            start.style.display = "none";
+                            stops.style.display = "block";
+                        }
+                        else {
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Oops...',
+                                text: 'Something went wrong!',
+                                showConfirmButton: false,
+                                timer: 1500
+                            })
+                        }
+                    }
+
+                }
+            }
+            x.open("GET", "mysqlStatus?switch=" + switchvalue + "&sqlType=" + sqlType + "&lapusername=" + lapusername + "&lappass=" + lappass + "&lapIp=" + lapIp);
+            x.send();
+        }
+    }
+
+
+
+
+
+
+
+
+    let gokul = "";
+    function userTable(ele) {
+        event.preventDefault();
+        const x = new XMLHttpRequest();
+        console.log(x.readyState);
+        console.log(ele);
+        console.log(ele.value);
+        // gokul = "testeleme"
+        x.onreadystatechange = function () {
+            if (x.readyState == 4) {
+                if (x.status == 200) {
+                    var jsonobj = JSON.parse(x.responseText);
+                    var size = Object.keys(jsonobj).length;
+                    console.log(jsonobj);
+                    document.getElementById("userresultshow").innerHTML = "";
+                    document.getElementById("usertableshow").innerHTML = "";
+                    document.getElementById("usertableshow").innerHTML = "<h1>TABLE</h1>";
+                    Object.keys(jsonobj).forEach(function (key) {
+                        let values = jsonobj[key];
+                        console.log(values);
+                        var but = document.createElement("button");
+                        but.setAttribute("value", values);
+                        but.setAttribute("type", "button");
+                        but.innerText = values;
+                        but.setAttribute("onclick", "userTableData(event)");
+                        let idCheck = document.getElementById("usertableshow");
+                        idCheck.append(but);
+                    });
+                }
+
+            }
+        }
+        gokul = ele.value;
+       console.log(ele.value);
+
+        // console.log(userDbvalue);
+        x.open("get", "usertableget?dbname=" + gokul);
+        x.send();
+    }
+
+
+
+
+
+
+    function userDatabase(ele) {
+        // _("comimg").style.display="none";
+        let getUser = ele.value;
+        const x = new XMLHttpRequest();
+        console.log(ele);
+        console.log(ele.value);
+        x.onreadystatechange = function () {
+            if (x.readyState == 4) {
+                if (x.status == 200) {
+                    var jsonobj = JSON.parse(x.responseText);
+                    var size = Object.keys(jsonobj).length;
+                    console.log(jsonobj);
+                    /* document.body.classList.remove("blurOn"); */
+                    _("blurbox").style.display="none";
+                    _("reverse").style.display="none";
+                    _("userviewPage").style.display="block";
+                    _("addProcess").style.display = "none";
+                    _("userBox").style.display = "none";
+                    _("reverse").style.display="reverse";
+                    _("queryResult").style.display = "none";
+                    _("syncBox").style.display = "none";
+                    document.getElementById("userdatabaseshow").innerHTML = "";
+                    document.getElementById("userdatabaseshow").innerHTML = "<h1>DATABASE</h1>";
+                    Object.keys(jsonobj).forEach(function (key) {
+                        let values = jsonobj[key];
+                        console.log(values);
+                        var but = document.createElement("button");
+                        but.setAttribute("value", values);
+                        but.setAttribute("type", "button");
+                        but.addEventListener("click",function(){
+                            console.log(this);
+                            userTable(this);
+                        }); 
+                        // but.setAttribute("onclick", function(){
+                        //     userTable(this);
+                        // });
+                        but.innerText = values;
+                        let idCheck = document.getElementById("userdatabaseshow");
+                        idCheck.append(but);
+                    });
+                }
+
+            }
+        }
+
+        x.open("get", "userdb?getUser=" + encodeURIComponent(getUser));
+        x.send();
+    }
+
+    function userTableData(ele) {
+        event.preventDefault();
+        const x = new XMLHttpRequest();
+        console.log(x.readyState);
+        console.log(ele);
+        console.log(ele.target.value);
+        x.onreadystatechange = function () {
+            if (x.readyState == 4) {
+                if (x.status == 200) {
+                    var jsonobj = x.response;
+                    var size = jsonobj.length;
+
+                    console.log(jsonobj)
+
+                    document.getElementById("userresultshow").innerHTML = jsonobj;
+                }
+
+            }
+        }
+        var dbtable = ele.target.value;
+        console.log(dbtable);
+        x.open("get", "usertabledata?tableName=" + dbtable + "&database=" + dbvalue);
+        x.send();
+    }
+
+function synccom(){
+    if(_("syncstart").style.opacity=="1"){
+        communication();
+    }
+}
+    let flag = false;
+    var btn = document.getElementById("btn");
+        var light = document.getElementById("light");
+        function toggleBtn(){
+
+            if(!flag){
+                document.querySelector(".hero").style.backgroundColor="rgba(0,0,0,0.4)";
+                document.querySelector(".top-one").style.backgroundColor="rgba(0,0,0,0.4)";
+                document.getElementById("shake-btn").classList.add("animate__animated");
+                document.getElementById("shake-btn").classList.add("animate__headShake");
+                btn.classList.toggle("active");
+            light.classList.toggle("on");
+            _("syncstart").style.opacity="1";
+            
+            }
+            else{
+                _("syncstart").style.transition="0.2s";
+                document.querySelector(".hero").style.backgroundColor="#ffffff";
+                document.querySelector(".top-one").style.backgroundColor="#ffffff";
+                // light.classList.toggle("offBtn");
+                light.classList.toggle("on");
+                _("syncstart").style.opacity="0";
+            }
+           flag = !flag;
+
+       
+            
+        }
+
+
+
+        function confirmAdd(){
+            Swal.fire({
+  title: 'Are you sure?',
+  text: "You won't be able to revert this!",
+  icon: 'warning',
+  showCancelButton: true,
+  confirmButtonColor: '#3085d6',
+  cancelButtonColor: '#d33',
+  confirmButtonText: 'Yes, delete it!'
+}).then((result) => {
+  if (result.isConfirmed) {
+   masterClientAdd();
+  }
+})
+        }
+
+
+
+
+function conLogout(){
+    Swal.fire({
+  title: 'Are you sure?',
+  text: "You won't be able to revert this!",
+  icon: 'warning',
+  showCancelButton: true,
+  confirmButtonColor: '#3085d6',
+  cancelButtonColor: '#d33',
+  confirmButtonText: 'Yes, Logout now!'
+}).then((result) => {
+  if (result.isConfirmed) {
+  logout();
+  }
+})
+}
+</script>
+
+</html>
+
+
+
+
+
+<!-- 
+
+<h1 id="main-title">Our Features</h1>
+<section>
+<form action="Sqlselector.html" id="sqlPlay">
+    <button id="main-btn">
+        <img src="https://lh3.googleusercontent.com/pw/AMWts8CBdWKWH9L1jnvBOXcE2DjRL83mXGhPif0Lq8Qp3zlTOlQL4wWjvGY1mW2CHv9WWQwtFWrkDc62hebC4KUx1wJmpLC3vxbJ275lsNqaHJSmZ_yMQslNnOrmBhqqx_NFgrpJrBWBd_l3fWONrXHrrWZPb0uoXK2WxuFroc0PQpgZH1A75KvMUzU2NFp2RSpdGytMRgYg0YC_Qeie3uR_n-YgTSAy2okkFXQ-CZB-pjw-gXbI1nei-8K9FCByjZleFswDbCfVS1AvGkxejoi2gc1LzKVKCoAUT8deTuCyDYEM6MypqVv9VVYFJPoG9cJy0JRWHg1DTMtMebJqRrQseZcO_yBpV60jSim-IwC1TmFhLs-aYraTGR8eLiq93cebEeb2ltCNLJdKia6aLgqx1I2FOqDregDmu2h-5XZQ8fos8gw48trKeDW6Ck4K9sGmqt8TaCxz9yUtNh4ts6Z6iC8-6b5-_IAOJhidMMsiUCS-jchu9Nr-Cwi_phK-cPjPrTPc5y8-dR1dZpvpQH0VGVZB2MqkQRaAl6pwFH3SFsuEKzTxAznHC3cBvthmijmwVmTQcMGLEIJwQnKkcJxaUsCqIWRFkhvTfe3t82p8YaYKYtj2QBUiO1BCuoj9psxH8UMdGZYnLCM-kP9F55ktb8lzIdHYpsAeXHE4qpzIwfyBTE42qZvov3y_LUMZgG0OoUz6ktTC2quYmQq888hSTIRD2xJysEkn3dx6kTnMPYBWxNjzEy5TWm8ZWIDB45f5vzvo1KEfxgicYQN1cyTSu9EAmjIV3hoG9PmFNcWbRBTmzvb8WWWC2hqHwLH7LDta7NzKrOPDDG52P_afXPIWcPSgZG8hwGfgwxIm043AE7fo4rFbFjMHx_shogW4SE75SmSkJqOGPTI9o5NF8WHEgjeonzu7GboXYCBw4apODkTRkhhHvh-oFh-nLqm6rGEHcfGWl_AHav9Z1SLFwo9bY47zvyYAEWCZnKK7Z-mEQSJt-fUyZakPNvynsQuecTGxXpwIKM0diK4L=w464-h220-no?authuser=0"/>
+        <h1>Playground</h1>
+    </button>
+</form>
+<form action="ConvertProcessSelector.html" id="sqlPlay">
+    <button id="main-btn">
+        <img src="https://lh3.googleusercontent.com/yKApAMO1wlsLtLTGR4Fo9nGfqQNimw7oP9YNTioXR_aCtLVZWSbbnk3ovbO2ZWl7EfC0BUzYg6aClMH7NM3cNtFPujHgkVG4-gHUiscsxcZp2i7Xop2JHQ9fLryxwADYsJpmBtpIj6TSBlMxe83imLzMN5EXt8ausfLCA28LVEs3KAq-G3NFW8WZK4-VjXsUoihs0rF8zevrg79wLHaw1zIQWDPIndGhlzXmyoYPMCmdD5jgDIdAlCQdj0gRb3lI6Y22OzfqQrsgiWxIi5nbN9KgszMaWxKvZSgkj9CEgX1YVWps4u00c04ArSKlv5_JXb6cEcSxGddudJ0UpIKWD722vAktxy9Ofllvzstj8OGawUETLHAvL6SGUAabGPf2-Cni642Hl8n4uGIc7xHzfkaYDSk3lzMeGvaS2WtFRf2fGKjbZUFLGyUGb456_bT-Nq1wXqggPqPMDZ1YWLXJ_MFIFSRqkGdg60yjpQQQWVjWHz6WtEOtwZrHTiiohxkw8NRvA-_FIGqrOD7pUjnJCxec-kurC-J6tT9Uue_rhq55W6pIGSj6sEXq6WOLgzxLECwKp79H0M7h_xrB-Eq6D55WBjPWwaE9jHQb4CdgUIVFTfBAFD97dQ6P579Q5ONmfGWWJNBWq3KoAVrA2v-ONKw5hAV---N6HaKO5FgUPZTsuq97uun2Wo16fA5nlyS_QgJ8K0qucfLrIUUcDx4YQxnBMpcPDhKI2DEXHwkcIFM6c0d9nyDqWUPnC_C8o1Bs4dquxMwITxKNxzcrr5lQC3R9Flww9bOlJ49WrVXE32vygFAQChskPmW-dI_zf1nFmgJEoDienmvTMDLzu-CTqPhniKCGuT4YQpu1LasUeStDXOdlui5FNCR3ZtSxdQOWoeJyq7ERr6Kd5WpjcdXWvRpoYbXs-gUehDyYTeo4e31PS00ZoTw7VOEqvyynP-X4n11JrKW41-LIzMXgl9Dn_uO011DTWjWA1dPp8HLXOnV3MhUNl7Tbnw=w1039-h642-no?authuser=0"/>
+        <h1>Convertor</h1>
+    </button>
+</form>
+<form action="ServerClient.html" id="sqlPlay">
+    <button id="main-btn">
+       <img src="https://lh3.googleusercontent.com/A0e0qlHL4TlMaZUipvTwlgId8Hz7Eb75hc5XMXiCE1TzBh2T3Pclgt5KttqBTyepZ6emzeOKcgdMVa6wZ47LCQyEBOsgDMTZM8CBG_xy7UzzWhx06SMmy2TCll_POwnlVOOdai_z7iIAh0dgMe_CcqugHr9jDJ7NQQlGQqdUQ9mbk64gGM_jGFJXsbQ3UVgXy4KdhjdLrBda9hUtiBOL8V8unvB8hOviJsO5fCl9Ge73P1T66Of1HZKh4OyypxxX3i5DlsqrkYw-P2DSQUVdI4E3kcOLX5PNNQzohGr-nysFgt5A4kuB5GwsC-8YG1TYsG9xe8FVS8nPDYsuz96WytInqWEZfPnDJ2EEkJy8561bcapI-P_AnaTpLlXO4rOJTEdXP3O4wWHWnhzhps0a9ukuOue-mMLcYl2eFqiJ-9iVPkpFT9wrohwIMFvLbgUIoUKgrqFLtu8JMYXLa_I8KPpUt1TgVF_LcxtHz5LigFmp21BIayH-7U5NWk58oBK4Pkv3z8ezEF56mOJRsk189GCueoPgiJ11r3v0EVmd1tjFK8tvxpImFpqUVpyIA8N8lvVWIGUWmiNFCqLugrLYEuOLc3tm72dh3L7XZplOyQ-1wg9bcZiuklUQXuFDrGP6ZdjnD7p1bVzctdZmpsR6NFMEAknyCBhM2x_d6r6OuuB93wBQAv7dmbVJFvd-xrzPdtClaHyEFLUuDQ0tKdzIAB_lKQ9gnSbsSjO9G6PdFWgkFpDrgaic9ijcgwQhfJGIl8G3D8QzBi8XhBLSyszmfMPVY4L-sDlDreFVhUzJjj-PgWdzz5YFj7vDa3lBifutvfqQlTxSYCoj-1odtee-2GFLc1Equ4bWkRFaT3TYPq2zugWk-DVdwfoOmnFQbneVh49IMl2uBnhRdo18s7Uqq3oWrVlXENoDTYjA9znYS68hZz0mNoAMYCzatOkq5RAcBdFG6f3EMi61zs7sa6DPwOuRrUGoCHKzq5KOPbN_QbdB5B1QqltUAQ=w1049-h790-no?authuser=0"/>
+        <h1>Communication</h1>
+    </button>
+</form>
+</section> -->

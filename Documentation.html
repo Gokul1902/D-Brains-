@@ -1,0 +1,180 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="Documentation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <ul class="header_ul">
+            <li class="header_li"><a href="index1.html">Home</a></li>
+            <li class="header_li"><a href="Instruction.html">User Guide</a></li>
+            <!-- <li class="header_li"><a href="#">Send Mail</a></li> -->
+            <!-- <li class="header_li"><a href="#contact">Contact</a></li> -->
+        </ul>
+        <div class="label">
+            <img src="Group_504.png" />
+        </div>
+    </header>
+    <div id="INS">
+		<!-- <h2 id="title">DOCUMENTATION</h2> -->
+        <div class="head1">
+            <h2>Description</h2>
+            <!-- <img src ="/home/abinaya/Programmer/HTML/Documentation/DBsyncimg1.png"> -->
+            
+            <p>Synchronization in java is the capability to control the access of multiple threads to any shared
+                resource.Synchronization is the way by which processes that share the same memory space are managed in
+                an operating system. It helps maintain the consistency of data by using variables or hardware so that
+                only
+                one process can make changes to the shared memory at a time.There are two similar database
+                synchronization
+                wizards available from the Database menu. The simpler Synchronize Model wizard, and the more flexible
+                Synchronize with Any Source wizard</p>
+                <img id="img" src="https://www.manageengine.com/device-control/images/full-replication1.png">
+        </div>
+
+        <div class="head2">
+            <h2>Jar Files</h2>
+            <ul type="disc">
+                <li><a href="http://www.java2s.com/Code/Jar/j/Downloadjavajsonjar.htm">java-json.jar</a></li>
+                <li><a
+                        href="http://www.java2s.com/example/jar/j/download-jschextension015jar-file.html">jsch-extension.jar</a>
+                </li>
+                <li><a href="https://dev.mysql.com/downloads/connector/j/?os=26">mysql-connection.j-8.0.31.jar</a></li>
+                <li><a
+                        href="http://www.java2s.com/ref/jar/download-postgresql4221jar-file.html">postgresql-42.2.0.jre7.jar</a>
+                </li>
+                <li><a href="https://repo1.maven.org/maven2/org/postgresql/postgresql/42.5.1/">postgresql-42.5.1.jar</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="head3">
+            <h2>PRIMARY ACTOR</h2>
+            <p>Master(Server)</p>
+            <img id="img1"
+                src="coupler.io_.png">
+        </div>
+
+        <div class="head4">
+            <h2>Precondition</h2>
+            <h3>Step-1</h3>
+            <p>Client,Server logged in to the system</p>
+            <img id="img2" src="signin.png">
+            <h3>Step-2</h3>
+            <p>The first step is to connect to a database server, by providing a username, password, and host.</p>
+            <img id="img3" src="datasign.png">
+            <h3>Step-3</h3>
+            <p>Client ping the server</p>
+            <img id="img4" src="serverping.png">
+            <h3>Step-4</h3>
+            <p>Server gets the current status of the client.</p>
+            <img id="img5" src="clientstaus.png">
+            <h3>Step-5</h3>
+            <p>If the server has updated or deleted the database.</p>
+            <img id="img6" src="databaseupdate.png">
+            <h3>Step-6</h3>
+            <p>The client has the ability to create/delete/update a database.</p>
+            <img id="img7" src="client.png">
+        </div>
+        <div class="head6">
+            <h2>USE CASE</h2>
+            <p>Having a copy(duplicates) of server Database.</p>
+            <h4>1.Data Harmonization</h4>
+            <p>Synchronization helps maintain consistency between two or more data sources. So updates in one source are
+                mirrored on all the others. For example, customer addresses might appear in several places and
+                applications on a database, such as the CRM, billing system, customer’s e-commerce account, and order
+                fulfillment system.
+
+                So if the customer changes their address in their e-commerce account, the change should reflect in all
+                other systems using a synchronization process.</p>
+
+            <h4>2. Distributed Computing</h4>
+            <p>Synchronization is essential in cloud computing and distributed systems because data can exist in several
+                places. It ensures users can always access the most recent data versions and guarantees their updates
+                are
+                saved.<br>
+
+                <br>For example, when using cloud services such as DropBox or OneDrive, users can create documents on
+                one
+                device, save them in the cloud, and open them on another application, web browser, or device. The cloud
+                server reflects and stores any changes they make and forces an update on all the connected devices to
+                replace older versions with the latest copies.<br>
+
+                <br>Synchronization also helps with hybrid integration where data is stored on-premises and in cloud
+                services
+                such as Microsoft Azure, AWS, or Google Cloud Platforms. Processes like AWS data synchronization or
+                Azure
+                data sync handle data enrichment, filtration, transformation, and aggregation before transferring and
+                storing it, and vice versa. This occurs in real-time while maintaining data accuracy and consistency and
+                without interrupting business operations.
+            </p>
+
+            <h4>3. Storage and Analysis</h4>
+            <p>Data replication is used when storing data in repositories like data warehouses. However, updating the
+                data
+                requires real-time synchronization. For example, during a disaster recovery scenario, an organization
+                will
+                need an up-to-date data snapshot, so if it regularly syncs its backups, it will avoid substantial data
+                loss.</p>
+
+            <h4>4. Distribute Updates</h4>
+            <p>Synchronization can include significant changes, such as amending the structure of a relational database.
+                Therefore, the process can add and drop tables and rename columns. For example, when GDPR introduced the
+                requirement to ask users about cookie preferences, affected organizations had to introduce a new
+                database
+                column and sometimes an entirely new table to store the added information. These changes must reflect
+                across
+                the network to all database instances.</p>
+
+            <h4>5. Other Use Cases</h4>
+            <p>Other synchronization use cases include:<br></p>
+            <ul type="disc">
+                <li>Maintaining data availability</li>
+                <li>Consolidation of disparate business units</li>
+                <li>Allows the creation of a 360 view of business processes</li>
+            </ul>
+        </div>
+        <div class="head8">
+            <h2>Benefits of Data Synchronization</h2>
+            <p>Below are the benefits of synchronizing data:</p>
+            <ul type="disc">
+                <li>Removes Data Silos: Employees get data access in their applications, so they don’t have to request
+                    access every time. They also become aware of the data’s existence and any changes made.</li>
+                <li>Prevents Extensive Data Entry: It avoids the tedious and monotonous process of manually entering
+                    data and all changes made. Instead, employees can focus on other critical tasks.</li>
+                <li>Allows the Performance of Several Data Operations: It makes it easier to create records, update
+                    them, and delete them, adding value to the business and employees.
+                </li>
+                <li>Allows Real-Time Data Syncing: The Process of syncing data in batches might help in certain
+                    instances, but near real-time data syncing is invaluable for executing organizational processes
+                    successfully.</li>
+                <li>Prevents Data Loss: Continuous syncing ensures up-to-date data after the initial data backup.</li>
+            </ul>
+
+        </div>
+        <div class="head9">
+            <h2>FEATURES</h2>
+            <ul>
+                <li>DATABASE PLAYGROUND</li>
+                <li>SERVER SET-UP</li>
+                <li>QUERY TRANSLATOR</li>
+                <li>SYNCHRONIZATION</li>
+                <li>SQL TO DATABASE TABLE</li>
+                <li>CSV TO DATABASE TABLE</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- <div>
+        <a href="index.html" id="btn">Home Page</a>
+    </div> -->
+</body>
+
+</html>

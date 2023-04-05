@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Parisienne|Quicksand&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:#181943;
+}
+
+header {
+     background-color: #4649BF;
+     margin-top: 0;
+}
+/* 
+#header {
+    background-color: #4649BF;
+    width: 96%;
+    margin: auto;
+    text-align: center;
+} */
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#btn {
+    position: absolute;
+    top: 14%;
+    left: 90%;
+    width: 100px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #181943;
+    border-radius: 20px;
+
+}
+
+#INS {
+    /* border: 1px solid black; */
+    margin: 5% 2%;
+    padding: 0 2%;
+    position: absolute;
+    top: 0%;
+    font-family: 'EB Garamond', serif;
+    font-size: 25px;
+    background-color: white;
+}
+
+#title {
+    text-align:center;
+} 
+
+.head1>#img {
+    margin-left: 23%;
+    /* border: 1px solid black; */
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+
+#img1,
+#img2,
+#img3,
+#img4,
+#img5,
+#img6,
+#img7 {
+    width: 1000px;
+    height: 600px;
+    margin-left: 20%; 
+    /* border: 1px solid black; */
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+
+}
+#img1{
+    width: 1400px;
+    height: 600px;
+       margin-left: 10%;
+}
+.head2 a{
+       margin: 10px;
+    font-family: puvi_semi, sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+    color: #000855;
+}
+
+.header_ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px;
+    margin-top: 0;
+    padding: 20px;
+}
+
+.header_li {
+    list-style-type: none;
+    margin: 10px;
+    
+}
+
+.header_li>a {
+    margin: 10px;
+    font-family: puvi_semi, sans-serif;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    
+}
+
+.label img {
+    width: 200px;
+    /* height:40px; */
+    position: absolute;
+    top: 2;
+    left: 20px;
+    margin-top: 20px;
+}
